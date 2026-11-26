@@ -7,3 +7,6 @@ node_modules/
 .github-token
 *.token
 .freebuff-project-files.json
+.env.local
+.env*.local
+.vercel/
