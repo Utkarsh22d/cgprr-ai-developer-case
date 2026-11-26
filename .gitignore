@@ -10,3 +10,7 @@ node_modules/
 .env.local
 .env*.local
 .vercel/
+
+# Personal submission material: contains CTC, phone number, sent mail.
+# Kept out of the public repo on purpose.
+submission/
