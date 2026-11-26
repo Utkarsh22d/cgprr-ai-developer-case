@@ -84,8 +84,9 @@ function renderFindings() {
     [m.questions, "test questions, two sets"],
     [`${m.resumes} / ${m.jobs}`, "resumes against posts"],
   ];
+  const fmt = (v) => (typeof v === "number" ? inr(v) : String(v));
   $("#findings").innerHTML = items
-    .map(([v, l]) => `<div class="finding"><b>${esc(inr(v))}</b><span>${esc(l)}</span></div>`)
+    .map(([v, l]) => `<div class="finding"><b>${esc(fmt(v))}</b><span>${esc(l)}</span></div>`)
     .join("");
   $("#statusText").textContent = `${m.documents} docs · ${m.chunks} chunks`;
 }
