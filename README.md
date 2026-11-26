@@ -7,6 +7,8 @@ AI platform for **NEET.info Counsellor Assist** and **Hirrx Match** on a single
 **Live demo:** https://cgprr-ai-developer-case.vercel.app  
 **Mirror:** https://neet-info-counsellor-assist-demo-9fhmxj-preview.freebuff.site
 
+![Counsellor Assist demo — ask, guard, capacity and match](docs/preview.png)
+
 Everything in this repository is synthetic. No real college, fee notice, person,
 counselling rule or medical college is represented.
 
