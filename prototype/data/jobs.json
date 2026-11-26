@@ -1,0 +1,74 @@
+[
+ {
+  "jid": "J1",
+  "hospital": "Deccan Institute of Critical Care, Hyderabad",
+  "post": "Senior Consultant, Intensive Care",
+  "specialty": "Critical Care",
+  "degree_level": "MD",
+  "min_years": 10,
+  "required_skills": [
+   "ventilator management",
+   "ICU protocols",
+   "sepsis",
+   "ECMO"
+  ],
+  "text": "Lead a 24-bed ICU. Must run sepsis and ECMO protocols and supervise residents."
+ },
+ {
+  "jid": "J2",
+  "hospital": "Shanti Medical College, Patna",
+  "post": "Assistant Professor, General Medicine",
+  "specialty": "General Medicine",
+  "degree_level": "MD",
+  "min_years": 3,
+  "required_skills": [
+   "clinical teaching",
+   "internal medicine",
+   "research"
+  ],
+  "text": "Teach MBBS students and run the medicine outpatient department under NMC norms."
+ },
+ {
+  "jid": "J3",
+  "hospital": "Rajarhat Medical College & Hospital, Kolkata",
+  "post": "Consultant, Emergency Medicine",
+  "specialty": "Emergency Medicine",
+  "degree_level": "MD",
+  "min_years": 5,
+  "required_skills": [
+   "triage",
+   "trauma care",
+   "ACLS",
+   "emergency ultrasound"
+  ],
+  "text": "Run the emergency department across three shifts, including trauma and poisoning cases."
+ },
+ {
+  "jid": "J4",
+  "hospital": "Kalinga Institute of Medical Sciences, Bhubaneswar",
+  "post": "Junior Resident, Radiology",
+  "specialty": "Radiology",
+  "degree_level": "MBBS",
+  "min_years": 0,
+  "required_skills": [
+   "CT reporting",
+   "PACS"
+  ],
+  "text": "Support CT and MRI reporting under a consultant radiologist."
+ },
+ {
+  "jid": "J5",
+  "hospital": "Ganges Institute of Medical Sciences, Varanasi",
+  "post": "Assistant Professor, Community Medicine",
+  "specialty": "Community Medicine",
+  "degree_level": "MD",
+  "min_years": 2,
+  "required_skills": [
+   "epidemiology",
+   "biostatistics",
+   "field visits",
+   "teaching"
+  ],
+  "text": "Teach community medicine and run rural field visits and health surveys."
+ }
+]

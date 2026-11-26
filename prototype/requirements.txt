@@ -1,0 +1,4 @@
+numpy>=1.26
+pytest>=8.0
+# optional: EMBEDDER=st uses a real sentence-transformer instead of LSA
+# sentence-transformers>=2.7

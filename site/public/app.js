@@ -1,0 +1,379 @@
+/* NEET.info Counsellor Assist - demo frontend.
+ *
+ * Everything rendered here comes from data/demo.json, which export_site_data.py
+ * generates by running the actual Python prototype. The one piece of logic that
+ * runs live in the browser is the numeric guard: a port of src/neetqa/guard.py
+ * and textnorm.py, so the visitor can try to sneak a wrong figure past it.
+ */
+"use strict";
+
+const $ = (sel) => document.querySelector(sel);
+const esc = (s) =>
+  String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+const inr = (n) => {
+  if (n === null || n === undefined || Number.isNaN(n)) return "—";
+  return Number(n).toLocaleString("en-IN", { maximumFractionDigits: 2 });
+};
+
+let DATA = null;
+const state = { tab: "ask", set: "all", lang: null, query: "", qid: null, job: null };
+
+/* ------------------------------------------------------------------ */
+/* Numeric guard: port of guard.py + textnorm.py                       */
+/* ------------------------------------------------------------------ */
+
+const MULTIPLIERS = { lakh: 1e5, lakhs: 1e5, lac: 1e5, lacs: 1e5, crore: 1e7, crores: 1e7, thousand: 1e3 };
+
+function stripIdentifiers(text) {
+  return text
+    .replace(/\b[A-Z]{2,}-[A-Z0-9-]{2,}\b/g, " ")
+    .replace(/\b(20\d{2})\s*[-/]\s*(\d{2,4})\b/g, " ");
+}
+
+function extractAmounts(text) {
+  const clean = stripIdentifiers(String(text));
+  const re = /(\u20b9|Rs\.?|INR)?\s*(\d[\d,]*(?:\.\d+)?)\s*(lakhs?|lacs?|crores?|thousand|%|percent)?/gi;
+  const out = [];
+  let m;
+  while ((m = re.exec(clean)) !== null) {
+    const cur = m[1];
+    const digits = (m[2] || "").replace(/,/g, "");
+    if (!digits) continue;
+    let value = parseFloat(digits);
+    if (Number.isNaN(value)) continue;
+    let unit = (m[3] || "").toLowerCase();
+    let kind;
+    if (MULTIPLIERS[unit]) {
+      value *= MULTIPLIERS[unit];
+      kind = "money";
+      unit = unit.replace(/s$/, "");
+    } else if (unit === "%" || unit === "percent") {
+      kind = "percent";
+      unit = "percent";
+    } else if (cur) {
+      kind = "money";
+      unit = "";
+    } else {
+      kind = "count";
+      unit = "";
+    }
+    if (kind === "count" && Number.isInteger(value) && value >= 1950 && value <= 2099) kind = "year";
+    out.push({ raw: m[0].trim(), value, kind, unit });
+  }
+  return out;
+}
+
+const amountKey = (a) => `${a.kind}:${a.value.toFixed(2)}`;
+
+function checkAnswer(answer, evidence) {
+  const supported = new Set(extractAmounts(evidence).map(amountKey));
+  const amounts = extractAmounts(answer);
+  const unsupported = amounts.filter((a) => !supported.has(amountKey(a)));
+  return { ok: unsupported.length === 0, unsupported, checked: amounts.length };
+}
+
+/* ------------------------------------------------------------------ */
+/* Rendering                                                           */
+/* ------------------------------------------------------------------ */
+
+function renderStats() {
+  const m = DATA.meta;
+  const items = [
+    [m.documents, "documents"],
+    [m.chunks, "chunks indexed"],
+    [m.superseded, "superseded, filtered"],
+    [m.questions, "questions"],
+    [m.resumes, "resumes"],
+    [m.jobs, "job descriptions"],
+  ];
+  $("#stats").innerHTML = items.map(([v, l]) => `<div class="stat"><b>${inr(v)}</b><span>${esc(l)}</span></div>`).join("");
+}
+
+function visibleQuestions() {
+  const q = state.query.trim().toLowerCase();
+  return DATA.questions.filter((item) => {
+    if (state.set !== "all" && item.set !== state.set) return false;
+    if (state.lang && item.lang !== state.lang) return false;
+    if (q && !(item.question.toLowerCase().includes(q) || item.qid.toLowerCase().includes(q))) return false;
+    return true;
+  });
+}
+
+function renderQList() {
+  const rows = visibleQuestions();
+  const list = $("#qlist");
+  if (!rows.length) {
+    list.innerHTML = `<li><button disabled style="color:#8a8f99">No question matches that search.</button></li>`;
+    return;
+  }
+  list.innerHTML = rows
+    .map(
+      (item) => `<li><button data-qid="${esc(item.qid)}" class="${item.qid === state.qid ? "sel" : ""}">
+        <span class="qrow"><span class="qid">${esc(item.qid)}</span><span>${esc(item.question)}</span></span>
+        <span class="qrow" style="margin-top:4px">
+          <span class="tag">${esc(item.set)}</span>
+          <span class="tag">${esc(item.lang)}</span>
+          ${item.answerable ? "" : '<span class="tag">unanswerable</span>'}
+        </span>
+      </button></li>`
+    )
+    .join("");
+  list.querySelectorAll("button[data-qid]").forEach((btn) =>
+    btn.addEventListener("click", () => {
+      state.qid = btn.dataset.qid;
+      renderQList();
+      renderAnswer();
+    })
+  );
+}
+
+function renderAnswer() {
+  const card = $("#answerCard");
+  const item = DATA.questions.find((q) => q.qid === state.qid);
+  if (!item) {
+    card.innerHTML = `<p class="muted">Pick a question on the left. Answers are generated by the prototype on load — nothing here is written by hand.</p>`;
+    return;
+  }
+  const guardPill = item.refused
+    ? `<span class="pill neutral">no numbers to check</span>`
+    : item.guardOk
+    ? `<span class="pill ok">guard: every number cited</span>`
+    : `<span class="pill bad">guard: blocked</span>`;
+  const verdictPill = item.refused
+    ? `<span class="pill bad">refused</span>`
+    : `<span class="pill ok">answered</span>`;
+  const cites = item.citations.length
+    ? item.citations.map((c) => `<span class="pill cite">${esc(c)}</span>`).join("")
+    : `<span class="pill neutral">no citation</span>`;
+  const gold = item.gold.length ? item.gold : ["(none expected)"];
+  card.innerHTML = `
+    <p class="qbig">${esc(item.question)}</p>
+    <div class="text ${item.refused ? "refused" : ""}">${esc(item.answer)}</div>
+    <div class="meta">${verdictPill}${guardPill}${cites}</div>
+    <p class="muted small" style="margin:0 0 4px"><strong>Reason:</strong> ${esc(item.reason || "answer composed from the cited document")}</p>
+    <p class="muted small" style="margin:0"><strong>Gold document:</strong> ${gold.map(esc).join(", ")}${item.session ? ` · session filter <code>${esc(item.session)}</code>` : ""}</p>`;
+}
+
+/* ---------------------------- guard ------------------------------- */
+
+function renderGuard() {
+  const select = $("#gsource");
+  const options = DATA.corpus
+    .filter((d) => d.doc_type === "bond_rule" || d.doc_type === "fee_notice")
+    .map((d) => `<option value="${esc(d.doc_id)}">${esc(d.doc_id)} — ${esc(d.title)}</option>`);
+  select.innerHTML = options.join("");
+  $("#gpreset").addEventListener("change", (e) => {
+    const v = e.target.value;
+    if (!v) return;
+    if (v === "incident1") {
+      select.value = "DOC-BOND-HR-2627";
+      $("#gannswer").value = "The bond amount for Haryana is INR 5 lakh. [DOC-BOND-HR-2627]";
+    } else if (v === "ok") {
+      select.value = "DOC-BOND-HR-2627";
+      $("#gannswer").value = "The bond amount for Haryana is INR 10,00,000, for 2 years of rural service. [DOC-BOND-HR-2627]";
+    } else {
+      select.value = "DOC-BOND-HR-2627";
+      $("#gannswer").value = "The bond amount is INR 10 lakh. [DOC-BOND-HR-2627]";
+    }
+    runGuard();
+  });
+  select.addEventListener("change", runGuard);
+  $("#gannswer").addEventListener("input", runGuard);
+  runGuard();
+}
+
+function runGuard() {
+  const docId = $("#gsource").value;
+  const doc = DATA.corpus.find((d) => d.doc_id === docId);
+  const answer = $("#gannswer").value;
+  if (!doc) return;
+  $("#gsourceText").textContent = doc.text;
+  const result = checkAnswer(answer, doc.text);
+  const box = $("#gresult");
+  if (!answer.trim()) {
+    box.className = "verdict";
+    box.innerHTML = `<span class="muted">Type an answer above, or pick a preset.</span>`;
+    return;
+  }
+  if (result.ok) {
+    box.className = "verdict ok";
+    box.innerHTML = `<strong>Pass.</strong> All ${result.checked} number${result.checked === 1 ? "" : "s"} in this answer appear in ${esc(docId)}. This answer would reach the family.`;
+  } else {
+    const bad = result.unsupported.map((a) => `<code>${esc(a.raw)}</code>`).join(" ");
+    box.className = "verdict bad";
+    box.innerHTML = `<strong>Blocked.</strong> ${result.unsupported.length} figure${result.unsupported.length === 1 ? "" : "s"} not in the cited notice: ${bad}. The family sees a refusal with the citation instead.`;
+  }
+}
+
+/* --------------------------- capacity ------------------------------ */
+
+function table(headers, rows, alignLast = true) {
+  const head = headers.map((h) => `<th>${esc(h)}</th>`).join("");
+  const body = rows
+    .map(
+      (r) =>
+        `<tr>${r
+          .map((cell, i) => {
+            const numeric = alignLast && i > 0 && /^-?[\d,.]+$/.test(String(cell));
+            return `<td class="${numeric ? "num" : ""}">${cell}</td>`;
+          })
+          .join("")}</tr>`
+    )
+    .join("");
+  return `<table><thead><tr>${head}</tr></thead><tbody>${body}</tbody></table>`;
+}
+
+function renderCapacity() {
+  const c = DATA.capacity;
+  $("#kvtable").innerHTML = table(
+    ["Model, 4-bit", "Weights (GB)", "KV / token fp16", "KV pool (GB)", "Seqs @3,500 tok"],
+    c.kv
+      .filter((r) => r.weights_bits === 4)
+      .map((r) => [
+        esc(`${r.model} (${r.params_B}B)`),
+        inr(r.weights_gb),
+        `${inr(r.kv_kib_fp16)} KiB`,
+        inr(r.kv_pool_gb),
+        `<strong>${r.seq_fp16}</strong> fp16 / ${r.seq_int8} int8`,
+      ])
+  );
+  $("#thrtable").innerHTML = table(
+    ["Model", "Decode, 1 stream", "Decode, batched", "Prefill (tok/s)", "Concurrent seqs"],
+    c.throughput.map((r) => [
+      esc(r.model),
+      `${inr(r.decode_single)} tok/s`,
+      `<strong>${inr(r.decode_real)}</strong> tok/s`,
+      inr(r.prefill_tok_s),
+      inr(r.seqs),
+    ])
+  );
+  $("#traftable").innerHTML = table(
+    ["Scenario", "Chats/day", "Turns/s peak", "Prompt tok/s (raw)", "Prompt tok/s (design)", "Output tok/s"],
+    c.traffic.map((r) => [
+      esc(r.scenario),
+      inr(r.chats_day),
+      inr(r.turns_s_peak),
+      inr(r.prompt_tok_s_raw),
+      `<strong>${inr(r.prompt_tok_s_design)}</strong>`,
+      inr(r.output_tok_s),
+    ])
+  );
+
+  const t = c.tco;
+  const rows = [
+    ["Three-year total, one GPU", `INR ${inr(t.one_card)}`, true],
+    ["Three-year total, two GPUs", `INR ${inr(t.two_card)}`, false],
+    ["Cash excluding the sunk workstation", `INR ${inr(t.cash_excl_sunk)}`, false],
+    ["All-in cost per 1,000 chats", `INR ${inr(t.cost_per_1000_chats)}`, true],
+    ["Marginal cost per 1,000 chats", `INR ${inr(t.marginal_per_1000)}`, false],
+    ["People as a share of the total", `${inr(t.people_share)}%`, true],
+    ["Cloud cost per chat", `INR ${inr(t.cloud_per_chat)}`, false],
+    ["Break-even volume", `${inr(t.breakeven_chats_year)} chats / year`, true],
+    ["Cost per resume ranked (on-prem vs cloud)", `INR ${inr(t.onprem_per_resume)} vs ${inr(t.cloud_per_resume)}`, false],
+    ["GPU-hours per full 240k backlog", `${inr(c.batch.total_h)} (weekly ${inr(c.batch.weekly_h)})`, false],
+    ["Nights needed at 8 h", inr(c.batch.nights_at_8h), false],
+    ["Spare GPU-hours sellable per year", `${inr(c.rental.sellable_h)} at INR ${inr(c.rental.price)}/h`, false],
+  ];
+  $("#tco").innerHTML = rows
+    .map(([k, v, hi]) => `<div>${esc(k)}</div><div class="v ${hi ? "hi" : ""}">${esc(v)}</div>`)
+    .join("");
+}
+
+/* ---------------------------- ranking ------------------------------ */
+
+function renderRank() {
+  const select = $("#jselect");
+  if (!select.options.length) {
+    select.innerHTML = DATA.jobs.map((j) => `<option value="${esc(j.jid)}">${esc(j.post)} — ${esc(j.hospital)}</option>`).join("");
+    select.addEventListener("change", () => {
+      state.job = select.value;
+      renderRank();
+    });
+  }
+  if (!state.job) state.job = DATA.jobs[0].jid;
+  const job = DATA.jobs.find((j) => j.jid === state.job);
+  if (!job) return;
+
+  $("#ranktable").innerHTML = table(
+    ["#", "Candidate", "Score", "Eligibility", "Why"],
+    job.ranked.map((r) => [
+      String(r.rank),
+      esc(r.name),
+      `<strong>${r.score.toFixed(2)}</strong>`,
+      r.eligible
+        ? `<span class="flag ok">eligible</span>`
+        : `<span class="flag bad">ineligible</span>`,
+      r.explanation.map((line) => `<span class="expl">${esc(line)}</span>`).join(""),
+    ]),
+    false
+  );
+
+  const f = job.fairness;
+  const block = (label, d, note) => `
+    <div class="kv" style="margin-bottom:14px">
+      <div><strong>${esc(label)}</strong><br><span class="muted small">${esc(note)}</span></div>
+      <div class="v"><span class="flag ${d.passes ? "ok" : "bad"}">ratio ${d.ratio.toFixed(2)} · ${d.passes ? "PASS" : "FAIL"}</span></div>
+      <div>Pool (eligible for this post)</div><div class="v">${esc(JSON.stringify(d.pool))}</div>
+      <div>Selected in top 10</div><div class="v">${esc(JSON.stringify(d.top))}</div>
+      <div>Selection rate</div><div class="v">${esc(
+        Object.entries(d.rates).map(([g, v]) => `${g} ${(v * 100).toFixed(1)}%`).join(" · ")
+      )}</div>
+    </div>`;
+  $("#fairness").innerHTML =
+    block("Applicant pool", f.applicant, "What a regulator sees: top-10 share against everyone who applied.") +
+    block("Eligible pool", f.eligible, "Who was actually in the race after the NMC-style rule gates.") +
+    `<p class="muted small" style="margin:0">College tiers in the top 10: ${esc(JSON.stringify(f.tierTop))} against pool ${esc(JSON.stringify(f.tierPool))}. The applicant-pool failure is the one that matters: removing the college name from every feature did not, on its own, produce parity.</p>`;
+}
+
+/* ----------------------------- wiring ------------------------------ */
+
+function showTab(tab) {
+  state.tab = tab;
+  document.querySelectorAll("#tabs button").forEach((b) => b.classList.toggle("on", b.dataset.tab === tab));
+  document.querySelectorAll(".panel").forEach((p) => p.classList.toggle("on", p.id === `panel-${tab}`));
+}
+
+function wire() {
+  document.querySelectorAll("#tabs button").forEach((b) =>
+    b.addEventListener("click", () => showTab(b.dataset.tab))
+  );
+  $("#qsearch").addEventListener("input", (e) => {
+    state.query = e.target.value;
+    renderQList();
+  });
+  document.querySelectorAll("#qfilters button").forEach((b) => {
+    b.addEventListener("click", () => {
+      if (b.dataset.set) {
+        state.set = b.dataset.set;
+        document.querySelectorAll('#qfilters button[data-set]').forEach((x) => x.classList.toggle("on", x === b));
+      }
+      if (b.dataset.lang) {
+        const already = state.lang === b.dataset.lang;
+        state.lang = already ? null : b.dataset.lang;
+        b.classList.toggle("on", !already);
+      }
+      renderQList();
+    });
+  });
+}
+
+async function boot() {
+  const res = await fetch("data/demo.json");
+  if (!res.ok) throw new Error(`could not load demo.json (${res.status})`);
+  DATA = await res.json();
+  renderStats();
+  wire();
+  renderQList();
+  renderGuard();
+  renderCapacity();
+  renderRank();
+  state.qid = DATA.questions[0].qid;
+  renderQList();
+  renderAnswer();
+}
+
+boot().catch((err) => {
+  document.querySelector("main").innerHTML =
+    `<div class="card"><h2>Could not load the demo data</h2><p class="muted">${esc(err.message)}</p></div>`;
+});

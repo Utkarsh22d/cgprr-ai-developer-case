@@ -1,0 +1,599 @@
+[
+ {
+  "rid": "R01",
+  "name": "I. Bhattacharya",
+  "gender": "woman",
+  "college_tier": 3,
+  "specialty": "Critical Care",
+  "degree": "MS",
+  "relevant_years": 9,
+  "years_since_last_role": 0,
+  "gap_type": "none",
+  "gap_months": 0,
+  "skills": [
+   "sepsis",
+   "central lines"
+  ],
+  "publications": 0,
+  "current_role": "Assistant Professor",
+  "notes": "Registered with the state medical council; teaching experience recorded."
+ },
+ {
+  "rid": "R02",
+  "name": "I. Iyer",
+  "gender": "man",
+  "college_tier": 2,
+  "specialty": "Critical Care",
+  "degree": "MD",
+  "relevant_years": 8,
+  "years_since_last_role": 0,
+  "gap_type": "none",
+  "gap_months": 0,
+  "skills": [
+   "central lines",
+   "ICU protocols",
+   "sepsis"
+  ],
+  "publications": 4,
+  "current_role": "Registrar",
+  "notes": "Registered with the state medical council; teaching experience recorded."
+ },
+ {
+  "rid": "R03",
+  "name": "B. Kulkarni",
+  "gender": "woman",
+  "college_tier": 3,
+  "specialty": "Critical Care",
+  "degree": "MS",
+  "relevant_years": 6,
+  "years_since_last_role": 0,
+  "gap_type": "none",
+  "gap_months": 0,
+  "skills": [
+   "ECMO",
+   "ventilator management",
+   "sepsis"
+  ],
+  "publications": 0,
+  "current_role": "Senior Resident",
+  "notes": "Registered with the state medical council; teaching experience recorded."
+ },
+ {
+  "rid": "R04",
+  "name": "P. Sen",
+  "gender": "man",
+  "college_tier": 2,
+  "specialty": "Critical Care",
+  "degree": "DNB",
+  "relevant_years": 12,
+  "years_since_last_role": 1.0,
+  "gap_type": "maternity",
+  "gap_months": 12,
+  "skills": [
+   "sepsis",
+   "ventilator management",
+   "ICU protocols"
+  ],
+  "publications": 0,
+  "current_role": "Consultant",
+  "notes": "Registered with the state medical council; teaching experience recorded."
+ },
+ {
+  "rid": "R05",
+  "name": "N. Qureshi",
+  "gender": "man",
+  "college_tier": 1,
+  "specialty": "Critical Care",
+  "degree": "MS",
+  "relevant_years": 6,
+  "years_since_last_role": 0,
+  "gap_type": "none",
+  "gap_months": 0,
+  "skills": [
+   "ICU protocols",
+   "central lines",
+   "sepsis"
+  ],
+  "publications": 2,
+  "current_role": "Fellow",
+  "notes": "Registered with the state medical council; teaching experience recorded."
+ },
+ {
+  "rid": "R06",
+  "name": "T. Nair",
+  "gender": "woman",
+  "college_tier": 2,
+  "specialty": "Critical Care",
+  "degree": "DNB",
+  "relevant_years": 8,
+  "years_since_last_role": 1.5,
+  "gap_type": "illness",
+  "gap_months": 18,
+  "skills": [
+   "ventilator management",
+   "ECMO",
+   "sepsis",
+   "central lines"
+  ],
+  "publications": 0,
+  "current_role": "Fellow",
+  "notes": "Registered with the state medical council; teaching experience recorded."
+ },
+ {
+  "rid": "R07",
+  "name": "B. Chowdhury",
+  "gender": "man",
+  "college_tier": 3,
+  "specialty": "General Medicine",
+  "degree": "MD",
+  "relevant_years": 11,
+  "years_since_last_role": 0,
+  "gap_type": "none",
+  "gap_months": 0,
+  "skills": [
+   "research",
+   "diabetes care"
+  ],
+  "publications": 4,
+  "current_role": "Registrar",
+  "notes": "Registered with the state medical council; teaching experience recorded."
+ },
+ {
+  "rid": "R08",
+  "name": "P. Reddy",
+  "gender": "woman",
+  "college_tier": 2,
+  "specialty": "General Medicine",
+  "degree": "MD",
+  "relevant_years": 9,
+  "years_since_last_role": 1.5,
+  "gap_type": "caregiving",
+  "gap_months": 18,
+  "skills": [
+   "research",
+   "internal medicine",
+   "clinical teaching"
+  ],
+  "publications": 1,
+  "current_role": "Consultant",
+  "notes": "Registered with the state medical council; teaching experience recorded."
+ },
+ {
+  "rid": "R09",
+  "name": "D. Mukherjee",
+  "gender": "man",
+  "college_tier": 3,
+  "specialty": "General Medicine",
+  "degree": "DNB",
+  "relevant_years": 15,
+  "years_since_last_role": 0,
+  "gap_type": "none",
+  "gap_months": 0,
+  "skills": [
+   "clinical teaching",
+   "diabetes care",
+   "internal medicine"
+  ],
+  "publications": 4,
+  "current_role": "Fellow",
+  "notes": "Registered with the state medical council; teaching experience recorded."
+ },
+ {
+  "rid": "R10",
+  "name": "T. Patel",
+  "gender": "man",
+  "college_tier": 1,
+  "specialty": "General Medicine",
+  "degree": "MD",
+  "relevant_years": 8,
+  "years_since_last_role": 0,
+  "gap_type": "none",
+  "gap_months": 0,
+  "skills": [
+   "research",
+   "clinical teaching"
+  ],
+  "publications": 1,
+  "current_role": "Registrar",
+  "notes": "Registered with the state medical council; teaching experience recorded."
+ },
+ {
+  "rid": "R11",
+  "name": "I. Rao",
+  "gender": "woman",
+  "college_tier": 3,
+  "specialty": "General Medicine",
+  "degree": "MS",
+  "relevant_years": 5,
+  "years_since_last_role": 0.5,
+  "gap_type": "caregiving",
+  "gap_months": 6,
+  "skills": [
+   "research",
+   "internal medicine"
+  ],
+  "publications": 4,
+  "current_role": "Assistant Professor",
+  "notes": "Registered with the state medical council; teaching experience recorded."
+ },
+ {
+  "rid": "R12",
+  "name": "L. Das",
+  "gender": "man",
+  "college_tier": 2,
+  "specialty": "General Medicine",
+  "degree": "MD",
+  "relevant_years": 8,
+  "years_since_last_role": 0.8,
+  "gap_type": "caregiving",
+  "gap_months": 9,
+  "skills": [
+   "clinical teaching",
+   "internal medicine",
+   "research",
+   "diabetes care"
+  ],
+  "publications": 1,
+  "current_role": "Fellow",
+  "notes": "Registered with the state medical council; teaching experience recorded."
+ },
+ {
+  "rid": "R13",
+  "name": "S. Verma",
+  "gender": "woman",
+  "college_tier": 3,
+  "specialty": "General Medicine",
+  "degree": "MD",
+  "relevant_years": 0,
+  "years_since_last_role": 0.5,
+  "gap_type": "caregiving",
+  "gap_months": 6,
+  "skills": [
+   "internal medicine",
+   "NMC norms",
+   "research",
+   "clinical teaching"
+  ],
+  "publications": 7,
+  "current_role": "Fellow",
+  "notes": "Registered with the state medical council; teaching experience recorded."
+ },
+ {
+  "rid": "R14",
+  "name": "P. Sinha",
+  "gender": "man",
+  "college_tier": 2,
+  "specialty": "Emergency Medicine",
+  "degree": "MD",
+  "relevant_years": 11,
+  "years_since_last_role": 0,
+  "gap_type": "none",
+  "gap_months": 0,
+  "skills": [
+   "emergency ultrasound",
+   "poisoning management"
+  ],
+  "publications": 1,
+  "current_role": "Assistant Professor",
+  "notes": "Registered with the state medical council; teaching experience recorded."
+ },
+ {
+  "rid": "R15",
+  "name": "G. Menon",
+  "gender": "man",
+  "college_tier": 1,
+  "specialty": "Emergency Medicine",
+  "degree": "MD",
+  "relevant_years": 0,
+  "years_since_last_role": 0,
+  "gap_type": "none",
+  "gap_months": 0,
+  "skills": [
+   "triage",
+   "emergency ultrasound",
+   "trauma care"
+  ],
+  "publications": 1,
+  "current_role": "Senior Resident",
+  "notes": "Registered with the state medical council; teaching experience recorded."
+ },
+ {
+  "rid": "R16",
+  "name": "L. Ghosh",
+  "gender": "woman",
+  "college_tier": 2,
+  "specialty": "Emergency Medicine",
+  "degree": "DNB",
+  "relevant_years": 1,
+  "years_since_last_role": 0,
+  "gap_type": "none",
+  "gap_months": 0,
+  "skills": [
+   "emergency ultrasound",
+   "trauma care",
+   "triage",
+   "poisoning management"
+  ],
+  "publications": 0,
+  "current_role": "Registrar",
+  "notes": "Registered with the state medical council; teaching experience recorded."
+ },
+ {
+  "rid": "R17",
+  "name": "T. Banerjee",
+  "gender": "man",
+  "college_tier": 3,
+  "specialty": "Emergency Medicine",
+  "degree": "MD",
+  "relevant_years": 12,
+  "years_since_last_role": 0,
+  "gap_type": "none",
+  "gap_months": 0,
+  "skills": [
+   "ACLS",
+   "triage"
+  ],
+  "publications": 7,
+  "current_role": "Consultant",
+  "notes": "Registered with the state medical council; teaching experience recorded."
+ },
+ {
+  "rid": "R18",
+  "name": "D. Pillai",
+  "gender": "woman",
+  "college_tier": 2,
+  "specialty": "Emergency Medicine",
+  "degree": "MS",
+  "relevant_years": 1,
+  "years_since_last_role": 0,
+  "gap_type": "none",
+  "gap_months": 0,
+  "skills": [
+   "trauma care",
+   "emergency ultrasound",
+   "poisoning management",
+   "triage"
+  ],
+  "publications": 7,
+  "current_role": "Consultant",
+  "notes": "Registered with the state medical council; teaching experience recorded."
+ },
+ {
+  "rid": "R19",
+  "name": "S. Joshi",
+  "gender": "man",
+  "college_tier": 3,
+  "specialty": "Radiology",
+  "degree": "DNB",
+  "relevant_years": 8,
+  "years_since_last_role": 1.5,
+  "gap_type": "caregiving",
+  "gap_months": 18,
+  "skills": [
+   "MRI basics",
+   "PACS",
+   "ultrasound"
+  ],
+  "publications": 4,
+  "current_role": "Consultant",
+  "notes": "Registered with the state medical council; teaching experience recorded."
+ },
+ {
+  "rid": "R20",
+  "name": "K. Haldar",
+  "gender": "man",
+  "college_tier": 1,
+  "specialty": "Radiology",
+  "degree": "MBBS",
+  "relevant_years": 5,
+  "years_since_last_role": 0,
+  "gap_type": "none",
+  "gap_months": 0,
+  "skills": [
+   "MRI basics",
+   "PACS",
+   "contrast studies"
+  ],
+  "publications": 0,
+  "current_role": "Assistant Professor",
+  "notes": "Registered with the state medical council; teaching experience recorded."
+ },
+ {
+  "rid": "R21",
+  "name": "T. Mishra",
+  "gender": "woman",
+  "college_tier": 3,
+  "specialty": "Radiology",
+  "degree": "MD",
+  "relevant_years": 15,
+  "years_since_last_role": 0.8,
+  "gap_type": "maternity",
+  "gap_months": 9,
+  "skills": [
+   "CT reporting",
+   "PACS",
+   "MRI basics"
+  ],
+  "publications": 1,
+  "current_role": "Consultant",
+  "notes": "Registered with the state medical council; teaching experience recorded."
+ },
+ {
+  "rid": "R22",
+  "name": "B. Fernandes",
+  "gender": "man",
+  "college_tier": 2,
+  "specialty": "Radiology",
+  "degree": "MBBS",
+  "relevant_years": 8,
+  "years_since_last_role": 0,
+  "gap_type": "none",
+  "gap_months": 0,
+  "skills": [
+   "CT reporting",
+   "ultrasound"
+  ],
+  "publications": 0,
+  "current_role": "Senior Resident",
+  "notes": "Registered with the state medical council; teaching experience recorded."
+ },
+ {
+  "rid": "R23",
+  "name": "K. Kaur",
+  "gender": "woman",
+  "college_tier": 3,
+  "specialty": "Radiology",
+  "degree": "MS",
+  "relevant_years": 2,
+  "years_since_last_role": 0.5,
+  "gap_type": "caregiving",
+  "gap_months": 6,
+  "skills": [
+   "CT reporting",
+   "PACS",
+   "ultrasound",
+   "MRI basics"
+  ],
+  "publications": 2,
+  "current_role": "Consultant",
+  "notes": "Registered with the state medical council; teaching experience recorded."
+ },
+ {
+  "rid": "R24",
+  "name": "I. Bose",
+  "gender": "man",
+  "college_tier": 2,
+  "specialty": "Radiology",
+  "degree": "MBBS",
+  "relevant_years": 15,
+  "years_since_last_role": 0.8,
+  "gap_type": "caregiving",
+  "gap_months": 9,
+  "skills": [
+   "CT reporting",
+   "MRI basics"
+  ],
+  "publications": 4,
+  "current_role": "Registrar",
+  "notes": "Registered with the state medical council; teaching experience recorded."
+ },
+ {
+  "rid": "R25",
+  "name": "V. Thakur",
+  "gender": "man",
+  "college_tier": 1,
+  "specialty": "Community Medicine",
+  "degree": "MD",
+  "relevant_years": 0,
+  "years_since_last_role": 1.5,
+  "gap_type": "caregiving",
+  "gap_months": 18,
+  "skills": [
+   "field visits",
+   "teaching"
+  ],
+  "publications": 7,
+  "current_role": "Fellow",
+  "notes": "Registered with the state medical council; teaching experience recorded."
+ },
+ {
+  "rid": "R26",
+  "name": "R. Sethi",
+  "gender": "woman",
+  "college_tier": 2,
+  "specialty": "Community Medicine",
+  "degree": "MD",
+  "relevant_years": 15,
+  "years_since_last_role": 1.5,
+  "gap_type": "maternity",
+  "gap_months": 18,
+  "skills": [
+   "teaching",
+   "field visits",
+   "biostatistics",
+   "epidemiology"
+  ],
+  "publications": 7,
+  "current_role": "Consultant",
+  "notes": "Registered with the state medical council; teaching experience recorded."
+ },
+ {
+  "rid": "R27",
+  "name": "S. Anand",
+  "gender": "man",
+  "college_tier": 3,
+  "specialty": "Community Medicine",
+  "degree": "MD",
+  "relevant_years": 5,
+  "years_since_last_role": 1.5,
+  "gap_type": "caregiving",
+  "gap_months": 18,
+  "skills": [
+   "health survey",
+   "epidemiology"
+  ],
+  "publications": 0,
+  "current_role": "Assistant Professor",
+  "notes": "Registered with the state medical council; teaching experience recorded."
+ },
+ {
+  "rid": "R28",
+  "name": "P. Dutta",
+  "gender": "woman",
+  "college_tier": 2,
+  "specialty": "Community Medicine",
+  "degree": "MD",
+  "relevant_years": 9,
+  "years_since_last_role": 1.0,
+  "gap_type": "caregiving",
+  "gap_months": 12,
+  "skills": [
+   "biostatistics",
+   "field visits",
+   "health survey"
+  ],
+  "publications": 2,
+  "current_role": "Consultant",
+  "notes": "Registered with the state medical council; teaching experience recorded."
+ },
+ {
+  "rid": "R29",
+  "name": "J. Sharma",
+  "gender": "man",
+  "college_tier": 3,
+  "specialty": "Community Medicine",
+  "degree": "DNB",
+  "relevant_years": 0,
+  "years_since_last_role": 0,
+  "gap_type": "none",
+  "gap_months": 0,
+  "skills": [
+   "health survey",
+   "epidemiology",
+   "biostatistics",
+   "teaching"
+  ],
+  "publications": 0,
+  "current_role": "Assistant Professor",
+  "notes": "Registered with the state medical council; teaching experience recorded."
+ },
+ {
+  "rid": "R30",
+  "name": "S. Agarwal",
+  "gender": "man",
+  "college_tier": 1,
+  "specialty": "Community Medicine",
+  "degree": "MS",
+  "relevant_years": 9,
+  "years_since_last_role": 0,
+  "gap_type": "none",
+  "gap_months": 0,
+  "skills": [
+   "teaching",
+   "epidemiology"
+  ],
+  "publications": 7,
+  "current_role": "Senior Resident",
+  "notes": "Registered with the state medical council; teaching experience recorded."
+ }
+]

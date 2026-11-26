@@ -1,0 +1,128 @@
+[
+ {
+  "qid": "H01",
+  "question": "What does Ganges Institute in Varanasi charge for tuition?",
+  "lang": "en",
+  "answerable": true,
+  "gold_docs": [
+   "DOC-GIMS-VNS-FEE-2627"
+  ],
+  "session": "2026-27",
+  "note": "no 'fee' noun, no programme word"
+ },
+ {
+  "qid": "H02",
+  "question": "Rohtak MBBS first year total including hostel",
+  "lang": "en",
+  "answerable": true,
+  "gold_docs": [
+   "DOC-SMC-ROH-FEE-2627"
+  ],
+  "session": "2026-27",
+  "note": "telegraphic, no verb"
+ },
+ {
+  "qid": "H03",
+  "question": "Haryana bond kitna hai bhai",
+  "lang": "hi-rom",
+  "answerable": true,
+  "gold_docs": [
+   "DOC-BOND-HR-2627"
+  ],
+  "session": null,
+  "note": "slang + code-mix"
+ },
+ {
+  "qid": "H04",
+  "question": "deccan medical college hyderabad er deposit koto",
+  "lang": "bn-rom",
+  "answerable": true,
+  "gold_docs": [
+   "DOC-DMC-HYD-FEE-2627"
+  ],
+  "session": "2026-27",
+  "note": "roman Bengali word order"
+ },
+ {
+  "qid": "H05",
+  "question": "Which medical college charges the highest tuition in India?",
+  "lang": "en",
+  "answerable": false,
+  "gold_docs": [],
+  "session": null,
+  "note": "comparison across documents"
+ },
+ {
+  "qid": "H06",
+  "question": "What is the MBBS fee at Kalinga in 2025-26?",
+  "lang": "en",
+  "answerable": true,
+  "gold_docs": [
+   "DOC-KIMS-BBS-FEE-2526"
+  ],
+  "session": "2025-26",
+  "note": "past session"
+ },
+ {
+  "qid": "H07",
+  "question": "What is the MBBS bond amount in Odisha?",
+  "lang": "en",
+  "answerable": false,
+  "gold_docs": [],
+  "session": null,
+  "note": "no Odisha bond document"
+ },
+ {
+  "qid": "H08",
+  "question": "Is there a bond at Deccan Medical College?",
+  "lang": "en",
+  "answerable": false,
+  "gold_docs": [],
+  "session": null,
+  "note": "no bond document for Telangana"
+ },
+ {
+  "qid": "H09",
+  "question": "bihar me bond koto",
+  "lang": "hi-rom",
+  "answerable": true,
+  "gold_docs": [
+   "DOC-BOND-BR-2627"
+  ],
+  "session": null,
+  "note": "Bengali question word, Hindi word order"
+ },
+ {
+  "qid": "H10",
+  "question": "What is the penalty if I leave the course early in Haryana?",
+  "lang": "en",
+  "answerable": true,
+  "gold_docs": [
+   "DOC-BOND-HR-2627"
+  ],
+  "session": null,
+  "note": "synonyms: penalty, leave"
+ },
+ {
+  "qid": "H11",
+  "question": "What are the seat upgrade rules in round 3 of counselling?",
+  "lang": "en",
+  "answerable": true,
+  "gold_docs": [
+   "DOC-MCC-RULES-2627"
+  ],
+  "session": null,
+  "note": "multi-condition question"
+ },
+ {
+  "qid": "H12",
+  "question": "What is the bus fee for the Jhajjar route?",
+  "lang": "en",
+  "answerable": true,
+  "gold_docs": [
+   "DOC-NOISE-TRANSPORT-2627"
+  ],
+  "session": "2026-27",
+  "note": "distractor document"
+ }
+]

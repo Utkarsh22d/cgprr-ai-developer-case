@@ -1,0 +1,2071 @@
+{
+ "meta": {
+  "documents": 28,
+  "chunks": 212,
+  "superseded": 7,
+  "questions": 52,
+  "resumes": 30,
+  "jobs": 5
+ },
+ "questions": [
+  {
+   "qid": "Q01",
+   "set": "dev",
+   "question": "What is the annual MBBS tuition fee at Shanti Medical College, Patna for 2026-27?",
+   "lang": "en",
+   "session": "2026-27",
+   "answerable": true,
+   "gold": [
+    "DOC-SMC-PAT-FEE-2627"
+   ],
+   "answer": "Shanti Medical College, Patna — MBBS fee notice 2026-27: Annual tuition fee INR 10,40,000 — Seats approved for MBBS in this session: 150. [DOC-SMC-PAT-FEE-2627].",
+   "citations": [
+    "DOC-SMC-PAT-FEE-2627"
+   ],
+   "refused": false,
+   "reason": "",
+   "guardOk": true
+  },
+  {
+   "qid": "Q02",
+   "set": "dev",
+   "question": "What was the annual MBBS tuition fee at Shanti Medical College, Patna in 2025-26?",
+   "lang": "en",
+   "session": "2025-26",
+   "answerable": true,
+   "gold": [
+    "DOC-SMC-PAT-FEE-2526"
+   ],
+   "answer": "Shanti Medical College, Patna — MBBS fee notice 2025-26: Annual tuition fee INR 9,50,000 — Seats approved for MBBS in this session: 150. [DOC-SMC-PAT-FEE-2526].",
+   "citations": [
+    "DOC-SMC-PAT-FEE-2526"
+   ],
+   "refused": false,
+   "reason": "",
+   "guardOk": true
+  },
+  {
+   "qid": "Q03",
+   "set": "dev",
+   "question": "What is the MBBS bond amount in Haryana for 2026-27?",
+   "lang": "en",
+   "session": null,
+   "answerable": true,
+   "gold": [
+    "DOC-BOND-HR-2627"
+   ],
+   "answer": "Haryana MBBS state quota bond rule 2026-27: Bond amount INR 10,00,000 — Service period 2 years in a designated rural or district hospital in Haryana [DOC-BOND-HR-2627].",
+   "citations": [
+    "DOC-BOND-HR-2627"
+   ],
+   "refused": false,
+   "reason": "",
+   "guardOk": true
+  },
+  {
+   "qid": "Q04",
+   "set": "dev",
+   "question": "What is the MBBS bond amount in Uttar Pradesh?",
+   "lang": "en",
+   "session": null,
+   "answerable": true,
+   "gold": [
+    "DOC-BOND-UP-2627"
+   ],
+   "answer": "Uttar Pradesh (UP) MBBS state quota bond rule 2026-27: Bond amount INR 5,00,000 — Service period 5 years in a primary health centre in a rural district of Uttar Pradesh [DOC-BOND-UP-2627].",
+   "citations": [
+    "DOC-BOND-UP-2627"
+   ],
+   "refused": false,
+   "reason": "",
+   "guardOk": true
+  },
+  {
+   "qid": "Q05",
+   "set": "dev",
+   "question": "How many years of service does the Bihar MBBS bond require?",
+   "lang": "en",
+   "session": null,
+   "answerable": true,
+   "gold": [
+    "DOC-BOND-BR-2627"
+   ],
+   "answer": "Bihar MBBS state quota bond rule 2026-27: State service bond rule for MBBS graduates admitted against state quota seats. — This bond applies only to state quota MBBS seats in Bihar. [DOC-BOND-BR-2627].",
+   "citations": [
+    "DOC-BOND-BR-2627"
+   ],
+   "refused": false,
+   "reason": "",
+   "guardOk": true
+  },
+  {
+   "qid": "Q06",
+   "set": "dev",
+   "question": "What is the hostel and mess fee at Rajarhat Medical College, Kolkata for 2026-27?",
+   "lang": "en",
+   "session": "2026-27",
+   "answerable": true,
+   "gold": [
+    "DOC-RMCH-KOL-FEE-2627"
+   ],
+   "answer": "Rajarhat Medical College & Hospital, Kolkata — MBBS fee notice 2026-27: Hostel and mess charges INR 92,000 — Annual tuition fee INR 7,25,000 [DOC-RMCH-KOL-FEE-2627].",
+   "citations": [
+    "DOC-RMCH-KOL-FEE-2627"
+   ],
+   "refused": false,
+   "reason": "",
+   "guardOk": true
+  },
+  {
+   "qid": "Q07",
+   "set": "dev",
+   "question": "How many MBBS seats are approved at Kalinga Institute of Medical Sciences for 2026-27?",
+   "lang": "en",
+   "session": "2026-27",
+   "answerable": true,
+   "gold": [
+    "DOC-KIMS-BBS-FEE-2627"
+   ],
+   "answer": "Kalinga Institute of Medical Sciences, Bhubaneswar — MBBS fee notice 2026-27: Official MBBS fee notice for Kalinga Institute of Medical Sciences, Bhubaneswar, Odisha. — Seats approved for MBBS in this session: 100. [DOC-KIMS-BBS-FEE-2627].",
+   "citations": [
+    "DOC-KIMS-BBS-FEE-2627"
+   ],
+   "refused": false,
+   "reason": "",
+   "guardOk": true
+  },
+  {
+   "qid": "Q08",
+   "set": "dev",
+   "question": "What is the total payable in the first year at Deccan Medical College, Hyderabad for 2026-27?",
+   "lang": "en",
+   "session": "2026-27",
+   "answerable": true,
+   "gold": [
+    "DOC-DMC-HYD-FEE-2627"
+   ],
+   "answer": "Deccan Medical College, Hyderabad — MBBS fee notice 2026-27: Total payable in the first year INR 19,66,000 — Annual tuition fee INR 14,60,000 [DOC-DMC-HYD-FEE-2627].",
+   "citations": [
+    "DOC-DMC-HYD-FEE-2627"
+   ],
+   "refused": false,
+   "reason": "",
+   "guardOk": true
+  },
+  {
+   "qid": "Q09",
+   "set": "dev",
+   "question": "What is the annual tuition fee for MD at Shanti Medical College, Patna?",
+   "lang": "en",
+   "session": "2026-27",
+   "answerable": true,
+   "gold": [
+    "DOC-SMC-PAT-PG-2627"
+   ],
+   "answer": "Shanti Medical College MD fee notice 2026-27: Annual tuition fee for MD and MS INR 18,50,000 — Hostel and mess charges INR 1,45,000 [DOC-SMC-PAT-PG-2627].",
+   "citations": [
+    "DOC-SMC-PAT-PG-2627"
+   ],
+   "refused": false,
+   "reason": "",
+   "guardOk": true
+  },
+  {
+   "qid": "Q10",
+   "set": "dev",
+   "question": "Which document gives the state-wise MBBS seat matrix for 2026-27?",
+   "lang": "en",
+   "session": "2026-27",
+   "answerable": true,
+   "gold": [
+    "DOC-NMC-SEAT-2627"
+   ],
+   "answer": "NMC state-wise MBBS seat matrix 2026-27: National Medical Commission approved MBBS seat matrix for session 2026-27. — Bihar; 1,250; 1,150; 2,400 [DOC-NMC-SEAT-2627].",
+   "citations": [
+    "DOC-NMC-SEAT-2627"
+   ],
+   "refused": false,
+   "reason": "",
+   "guardOk": true
+  },
+  {
+   "qid": "Q11",
+   "set": "dev",
+   "question": "What is the forfeiture rule if a candidate resigns a seat in round 2?",
+   "lang": "en",
+   "session": null,
+   "answerable": true,
+   "gold": [
+    "DOC-MCC-RULES-2627"
+   ],
+   "answer": "MCC all-India counselling rules 2026-27: Forfeiture if a candidate resigns a seat in round 2 The tuition fee for the first year is forfeited, and the candidate is barred from the stray vacancy round — Forfeiture if a candidate does not join after round 1 Only the caution deposit is forfeited [DOC-MCC-RULES-2627].",
+   "citations": [
+    "DOC-MCC-RULES-2627"
+   ],
+   "refused": false,
+   "reason": "",
+   "guardOk": true
+  },
+  {
+   "qid": "Q12",
+   "set": "dev",
+   "question": "Does the Haryana bond apply to all-India quota seats?",
+   "lang": "en",
+   "session": null,
+   "answerable": true,
+   "gold": [
+    "DOC-BOND-HR-2627"
+   ],
+   "answer": "Haryana MBBS state quota bond rule 2026-27: This bond applies only to state quota MBBS seats in Haryana. — State service bond rule for MBBS graduates admitted against state quota seats. [DOC-BOND-HR-2627].",
+   "citations": [
+    "DOC-BOND-HR-2627"
+   ],
+   "refused": false,
+   "reason": "",
+   "guardOk": true
+  },
+  {
+   "qid": "Q13",
+   "set": "dev",
+   "question": "What is the caution deposit at Ganges Institute of Medical Sciences, Varanasi for 2026-27?",
+   "lang": "en",
+   "session": "2026-27",
+   "answerable": true,
+   "gold": [
+    "DOC-GIMS-VNS-FEE-2627"
+   ],
+   "answer": "Ganges Institute of Medical Sciences, Varanasi — MBBS fee notice 2026-27: One-time admission and caution deposit INR 2,00,000 — Annual tuition fee INR 11,85,000 [DOC-GIMS-VNS-FEE-2627].",
+   "citations": [
+    "DOC-GIMS-VNS-FEE-2627"
+   ],
+   "refused": false,
+   "reason": "",
+   "guardOk": true
+  },
+  {
+   "qid": "Q14",
+   "set": "dev",
+   "question": "What is the tuition fee at Saraswati Medical College, Rohtak in 2025-26?",
+   "lang": "en",
+   "session": "2025-26",
+   "answerable": true,
+   "gold": [
+    "DOC-SMC-ROH-FEE-2526"
+   ],
+   "answer": "Saraswati Medical College, Rohtak — MBBS fee notice 2025-26: Annual tuition fee INR 8,90,000 — Seats approved for MBBS in this session: 100. [DOC-SMC-ROH-FEE-2526].",
+   "citations": [
+    "DOC-SMC-ROH-FEE-2526"
+   ],
+   "refused": false,
+   "reason": "",
+   "guardOk": true
+  },
+  {
+   "qid": "Q15",
+   "set": "dev",
+   "question": "How much is the West Bengal MBBS bond?",
+   "lang": "en",
+   "session": null,
+   "answerable": true,
+   "gold": [
+    "DOC-BOND-WB-2627"
+   ],
+   "answer": "West Bengal MBBS state quota bond rule 2026-27: Bond amount INR 8,00,000 — Service period 1 year in a rural health centre in West Bengal [DOC-BOND-WB-2627].",
+   "citations": [
+    "DOC-BOND-WB-2627"
+   ],
+   "refused": false,
+   "reason": "",
+   "guardOk": true
+  },
+  {
+   "qid": "Q16",
+   "set": "dev",
+   "question": "What is the BSc Nursing fee at Rajarhat Medical College?",
+   "lang": "en",
+   "session": "2026-27",
+   "answerable": true,
+   "gold": [
+    "DOC-NOISE-NURSING-2627"
+   ],
+   "answer": "Rajarhat Medical College BSc Nursing fee notice 2026-27: Annual tuition fee for BSc Nursing INR 1,45,000 — Official fee notice for the BSc Nursing programme at Rajarhat Medical College & Hospital, Kolkata. [DOC-NOISE-NURSING-2627].",
+   "citations": [
+    "DOC-NOISE-NURSING-2627"
+   ],
+   "refused": false,
+   "reason": "",
+   "guardOk": true
+  },
+  {
+   "qid": "Q17",
+   "set": "dev",
+   "question": "What is the annual bus fee at Saraswati Medical College, Rohtak?",
+   "lang": "en",
+   "session": "2026-27",
+   "answerable": true,
+   "gold": [
+    "DOC-NOISE-TRANSPORT-2627"
+   ],
+   "answer": "Saraswati Medical College transport and bus fee circular: Rohtak city to college INR 28,000 — Jhajjar to college INR 34,000 [DOC-NOISE-TRANSPORT-2627].",
+   "citations": [
+    "DOC-NOISE-TRANSPORT-2627"
+   ],
+   "refused": false,
+   "reason": "",
+   "guardOk": true
+  },
+  {
+   "qid": "Q18",
+   "set": "dev",
+   "question": "What is the minimum teaching experience for an Assistant Professor under NMC norms?",
+   "lang": "en",
+   "session": null,
+   "answerable": true,
+   "gold": [
+    "DOC-NMC-FACULTY-NORMS"
+   ],
+   "answer": "NMC minimum faculty norms for medical colleges: Associate Professor; MD or MS or DNB in the subject; 5 years, of which 2 years as Assistant Professor — Assistant Professor; MD or MS or DNB in the subject; 3 years of teaching experience [DOC-NMC-FACULTY-NORMS].",
+   "citations": [
+    "DOC-NMC-FACULTY-NORMS"
+   ],
+   "refused": false,
+   "reason": "",
+   "guardOk": true
+  },
+  {
+   "qid": "Q19",
+   "set": "dev",
+   "question": "What tuition ceiling does the West Bengal fee order set for private medical colleges?",
+   "lang": "en",
+   "session": "2026-27",
+   "answerable": true,
+   "gold": [
+    "DOC-WB-FEE-ORDER-2627"
+   ],
+   "answer": "West Bengal fee regulatory order for private medical colleges: Tuition ceiling for MBBS INR 8,00,000 per year for private medical colleges in West Bengal — Colleges above the ceiling Must refund the excess within 30 days of this order [DOC-WB-FEE-ORDER-2627].",
+   "citations": [
+    "DOC-WB-FEE-ORDER-2627"
+   ],
+   "refused": false,
+   "reason": "",
+   "guardOk": true
+  },
+  {
+   "qid": "Q20",
+   "set": "dev",
+   "question": "What is the last date to report to the allotted college in the final round?",
+   "lang": "en",
+   "session": null,
+   "answerable": true,
+   "gold": [
+    "DOC-MCC-RULES-2627"
+   ],
+   "answer": "MCC all-India counselling rules 2026-27: Last date to report to the allotted college 20 September 2026 for the final round — Forfeiture if a candidate resigns a seat in round 2 The tuition fee for the first year is forfeited, and the candidate is barred from the stray vacancy round [DOC-MCC-RULES-2627].",
+   "citations": [
+    "DOC-MCC-RULES-2627"
+   ],
+   "refused": false,
+   "reason": "",
+   "guardOk": true
+  },
+  {
+   "qid": "Q21",
+   "set": "dev",
+   "question": "patna me mbbs ki fees kitni hai 2026-27 me",
+   "lang": "hi-rom",
+   "session": "2026-27",
+   "answerable": true,
+   "gold": [
+    "DOC-SMC-PAT-FEE-2627"
+   ],
+   "answer": "Shanti Medical College, Patna — MBBS fee notice 2026-27: Annual tuition fee INR 10,40,000 — Seats approved for MBBS in this session: 150. [DOC-SMC-PAT-FEE-2627].",
+   "citations": [
+    "DOC-SMC-PAT-FEE-2627"
+   ],
+   "refused": false,
+   "reason": "",
+   "guardOk": true
+  },
+  {
+   "qid": "Q22",
+   "set": "dev",
+   "question": "haryana me bond kitna hai",
+   "lang": "hi-rom",
+   "session": null,
+   "answerable": true,
+   "gold": [
+    "DOC-BOND-HR-2627"
+   ],
+   "answer": "Haryana MBBS state quota bond rule 2026-27: Bond amount INR 10,00,000 — Service period 2 years in a designated rural or district hospital in Haryana [DOC-BOND-HR-2627].",
+   "citations": [
+    "DOC-BOND-HR-2627"
+   ],
+   "refused": false,
+   "reason": "",
+   "guardOk": true
+  },
+  {
+   "qid": "Q23",
+   "set": "dev",
+   "question": "kolkata medical college me hostel fees kitni hai",
+   "lang": "hi-rom",
+   "session": "2026-27",
+   "answerable": true,
+   "gold": [
+    "DOC-RMCH-KOL-FEE-2627"
+   ],
+   "answer": "Rajarhat Medical College & Hospital, Kolkata — MBBS fee notice 2026-27: Annual tuition fee INR 7,25,000 — Hostel and mess charges INR 92,000 [DOC-RMCH-KOL-FEE-2627].",
+   "citations": [
+    "DOC-RMCH-KOL-FEE-2627"
+   ],
+   "refused": false,
+   "reason": "",
+   "guardOk": true
+  },
+  {
+   "qid": "Q24",
+   "set": "dev",
+   "question": "bihar bond me kitne saal service karni hai",
+   "lang": "hi-rom",
+   "session": null,
+   "answerable": true,
+   "gold": [
+    "DOC-BOND-BR-2627"
+   ],
+   "answer": "Bihar MBBS state quota bond rule 2026-27: Service period 3 years in a designated district hospital in Bihar — Bond amount INR 10,00,000 [DOC-BOND-BR-2627].",
+   "citations": [
+    "DOC-BOND-BR-2627"
+   ],
+   "refused": false,
+   "reason": "",
+   "guardOk": true
+  },
+  {
+   "qid": "Q25",
+   "set": "dev",
+   "question": "up me mbbs ke liye kitna bond bharna padta hai",
+   "lang": "hi-rom",
+   "session": null,
+   "answerable": true,
+   "gold": [
+    "DOC-BOND-UP-2627"
+   ],
+   "answer": "Uttar Pradesh (UP) MBBS state quota bond rule 2026-27: Bond amount INR 5,00,000 — Service period 5 years in a primary health centre in a rural district of Uttar Pradesh [DOC-BOND-UP-2627].",
+   "citations": [
+    "DOC-BOND-UP-2627"
+   ],
+   "refused": false,
+   "reason": "",
+   "guardOk": true
+  },
+  {
+   "qid": "Q26",
+   "set": "dev",
+   "question": "varanasi medical college me admission deposit kitna hai",
+   "lang": "hi-rom",
+   "session": "2026-27",
+   "answerable": true,
+   "gold": [
+    "DOC-GIMS-VNS-FEE-2627"
+   ],
+   "answer": "Ganges Institute of Medical Sciences, Varanasi — MBBS fee notice 2026-27: One-time admission and caution deposit INR 2,00,000 — Annual tuition fee INR 11,85,000 [DOC-GIMS-VNS-FEE-2627].",
+   "citations": [
+    "DOC-GIMS-VNS-FEE-2627"
+   ],
+   "refused": false,
+   "reason": "",
+   "guardOk": true
+  },
+  {
+   "qid": "Q27",
+   "set": "dev",
+   "question": "kolkata medical college er mbbs fees koto 2026-27",
+   "lang": "bn-rom",
+   "session": "2026-27",
+   "answerable": true,
+   "gold": [
+    "DOC-RMCH-KOL-FEE-2627"
+   ],
+   "answer": "Rajarhat Medical College & Hospital, Kolkata — MBBS fee notice 2026-27: Annual tuition fee INR 7,25,000 — Seats approved for MBBS in this session: 125. [DOC-RMCH-KOL-FEE-2627].",
+   "citations": [
+    "DOC-RMCH-KOL-FEE-2627"
+   ],
+   "refused": false,
+   "reason": "",
+   "guardOk": true
+  },
+  {
+   "qid": "Q28",
+   "set": "dev",
+   "question": "haryana bond er taka koto",
+   "lang": "bn-rom",
+   "session": null,
+   "answerable": true,
+   "gold": [
+    "DOC-BOND-HR-2627"
+   ],
+   "answer": "Haryana MBBS state quota bond rule 2026-27: Bond amount INR 10,00,000 — Service period 2 years in a designated rural or district hospital in Haryana [DOC-BOND-HR-2627].",
+   "citations": [
+    "DOC-BOND-HR-2627"
+   ],
+   "refused": false,
+   "reason": "",
+   "guardOk": true
+  },
+  {
+   "qid": "Q29",
+   "set": "dev",
+   "question": "kalinga medical college bhubaneswar re seat koto",
+   "lang": "bn-rom",
+   "session": "2026-27",
+   "answerable": true,
+   "gold": [
+    "DOC-KIMS-BBS-FEE-2627"
+   ],
+   "answer": "Kalinga Institute of Medical Sciences, Bhubaneswar — MBBS fee notice 2026-27: Seats approved for MBBS in this session: 100. — Annual tuition fee INR 10,95,000 [DOC-KIMS-BBS-FEE-2627].",
+   "citations": [
+    "DOC-KIMS-BBS-FEE-2627"
+   ],
+   "refused": false,
+   "reason": "",
+   "guardOk": true
+  },
+  {
+   "qid": "Q30",
+   "set": "dev",
+   "question": "west bengal bond kemon ache",
+   "lang": "bn-rom",
+   "session": null,
+   "answerable": true,
+   "gold": [
+    "DOC-BOND-WB-2627"
+   ],
+   "answer": "West Bengal MBBS state quota bond rule 2026-27: State service bond rule for MBBS graduates admitted against state quota seats. — This bond applies only to state quota MBBS seats in West Bengal. [DOC-BOND-WB-2627].",
+   "citations": [
+    "DOC-BOND-WB-2627"
+   ],
+   "refused": false,
+   "reason": "",
+   "guardOk": true
+  },
+  {
+   "qid": "Q31",
+   "set": "dev",
+   "question": "What is the MBBS tuition fee at a medical college in Assam?",
+   "lang": "en",
+   "session": null,
+   "answerable": false,
+   "gold": [],
+   "answer": "I do not have an official notice that answers this. Please check with the counselling authority before acting.",
+   "citations": [],
+   "refused": true,
+   "reason": "no notice mentions: assam",
+   "guardOk": false
+  },
+  {
+   "qid": "Q32",
+   "set": "dev",
+   "question": "Who is the current director of AIIMS New Delhi?",
+   "lang": "en",
+   "session": null,
+   "answerable": false,
+   "gold": [],
+   "answer": "I do not have an official notice that answers this. Please check with the counselling authority before acting.",
+   "citations": [],
+   "refused": true,
+   "reason": "coverage 0.47 < 0.5",
+   "guardOk": false
+  },
+  {
+   "qid": "Q33",
+   "set": "dev",
+   "question": "What is the NEET-UG 2027 cut-off for Shanti Medical College, Patna?",
+   "lang": "en",
+   "session": null,
+   "answerable": false,
+   "gold": [],
+   "answer": "I do not have an official notice that answers this. Please check with the counselling authority before acting.",
+   "citations": [],
+   "refused": true,
+   "reason": "no notice in the corpus states a cut-off",
+   "guardOk": false
+  },
+  {
+   "qid": "Q34",
+   "set": "dev",
+   "question": "What is the annual salary of a junior resident at Kalinga Institute of Medical Sciences?",
+   "lang": "en",
+   "session": null,
+   "answerable": false,
+   "gold": [],
+   "answer": "I do not have an official notice that answers this. Please check with the counselling authority before acting.",
+   "citations": [],
+   "refused": true,
+   "reason": "no notice in the corpus states a salary",
+   "guardOk": false
+  },
+  {
+   "qid": "Q35",
+   "set": "dev",
+   "question": "What is the BDS bond amount in Haryana?",
+   "lang": "en",
+   "session": null,
+   "answerable": false,
+   "gold": [],
+   "answer": "I do not have an official notice that answers this. Please check with the counselling authority before acting.",
+   "citations": [],
+   "refused": true,
+   "reason": "programme only appears as an exclusion: bds",
+   "guardOk": false
+  },
+  {
+   "qid": "Q36",
+   "set": "dev",
+   "question": "What is the tuition fee for session 2029-30 at Shanti Medical College, Patna?",
+   "lang": "en",
+   "session": "2029-30",
+   "answerable": false,
+   "gold": [],
+   "answer": "I do not have an official notice that answers this. Please check with the counselling authority before acting.",
+   "citations": [],
+   "refused": true,
+   "reason": "no document matches this session",
+   "guardOk": false
+  },
+  {
+   "qid": "Q37",
+   "set": "dev",
+   "question": "How many MBBS seats does a medical college in Rajasthan have?",
+   "lang": "en",
+   "session": null,
+   "answerable": false,
+   "gold": [],
+   "answer": "I do not have an official notice that answers this. Please check with the counselling authority before acting.",
+   "citations": [],
+   "refused": true,
+   "reason": "no notice mentions: rajasthan",
+   "guardOk": false
+  },
+  {
+   "qid": "Q38",
+   "set": "dev",
+   "question": "What is the placement package for nursing graduates at Rajarhat Medical College?",
+   "lang": "en",
+   "session": null,
+   "answerable": false,
+   "gold": [],
+   "answer": "I do not have an official notice that answers this. Please check with the counselling authority before acting.",
+   "citations": [],
+   "refused": true,
+   "reason": "no notice in the corpus states a placement record",
+   "guardOk": false
+  },
+  {
+   "qid": "Q39",
+   "set": "dev",
+   "question": "What is the hostel fee at Saraswati Medical College, Rohtak for 2026-27?",
+   "lang": "en",
+   "session": "2026-27",
+   "answerable": true,
+   "gold": [
+    "DOC-SMC-ROH-FEE-2627"
+   ],
+   "answer": "Saraswati Medical College, Rohtak — MBBS fee notice 2026-27: Annual tuition fee INR 9,55,000 — Hostel and mess charges INR 1,12,000 [DOC-SMC-ROH-FEE-2627].",
+   "citations": [
+    "DOC-SMC-ROH-FEE-2627"
+   ],
+   "refused": false,
+   "reason": "",
+   "guardOk": true
+  },
+  {
+   "qid": "Q40",
+   "set": "dev",
+   "question": "What is the one-time admission deposit at Deccan Medical College?",
+   "lang": "en",
+   "session": "2026-27",
+   "answerable": true,
+   "gold": [
+    "DOC-DMC-HYD-FEE-2627"
+   ],
+   "answer": "Deccan Medical College, Hyderabad — MBBS fee notice 2026-27: One-time admission and caution deposit INR 3,00,000 — Annual tuition fee INR 14,60,000 [DOC-DMC-HYD-FEE-2627].",
+   "citations": [
+    "DOC-DMC-HYD-FEE-2627"
+   ],
+   "refused": false,
+   "reason": "",
+   "guardOk": true
+  },
+  {
+   "qid": "H01",
+   "set": "stress",
+   "question": "What does Ganges Institute in Varanasi charge for tuition?",
+   "lang": "en",
+   "session": "2026-27",
+   "answerable": true,
+   "gold": [
+    "DOC-GIMS-VNS-FEE-2627"
+   ],
+   "answer": "Ganges Institute of Medical Sciences, Varanasi — MBBS fee notice 2026-27: Annual tuition fee INR 11,85,000 — Seats approved for MBBS in this session: 100. [DOC-GIMS-VNS-FEE-2627].",
+   "citations": [
+    "DOC-GIMS-VNS-FEE-2627"
+   ],
+   "refused": false,
+   "reason": "",
+   "guardOk": true
+  },
+  {
+   "qid": "H02",
+   "set": "stress",
+   "question": "Rohtak MBBS first year total including hostel",
+   "lang": "en",
+   "session": "2026-27",
+   "answerable": true,
+   "gold": [
+    "DOC-SMC-ROH-FEE-2627"
+   ],
+   "answer": "Saraswati Medical College, Rohtak — MBBS fee notice 2026-27: Total payable in the first year INR 13,15,000 — Hostel and mess charges INR 1,12,000 [DOC-SMC-ROH-FEE-2627].",
+   "citations": [
+    "DOC-SMC-ROH-FEE-2627"
+   ],
+   "refused": false,
+   "reason": "",
+   "guardOk": true
+  },
+  {
+   "qid": "H03",
+   "set": "stress",
+   "question": "Haryana bond kitna hai bhai",
+   "lang": "hi-rom",
+   "session": null,
+   "answerable": true,
+   "gold": [
+    "DOC-BOND-HR-2627"
+   ],
+   "answer": "Haryana MBBS state quota bond rule 2026-27: Bond amount INR 10,00,000 — Service period 2 years in a designated rural or district hospital in Haryana [DOC-BOND-HR-2627].",
+   "citations": [
+    "DOC-BOND-HR-2627"
+   ],
+   "refused": false,
+   "reason": "",
+   "guardOk": true
+  },
+  {
+   "qid": "H04",
+   "set": "stress",
+   "question": "deccan medical college hyderabad er deposit koto",
+   "lang": "bn-rom",
+   "session": "2026-27",
+   "answerable": true,
+   "gold": [
+    "DOC-DMC-HYD-FEE-2627"
+   ],
+   "answer": "Deccan Medical College, Hyderabad — MBBS fee notice 2026-27: One-time admission and caution deposit INR 3,00,000 — Annual tuition fee INR 14,60,000 [DOC-DMC-HYD-FEE-2627].",
+   "citations": [
+    "DOC-DMC-HYD-FEE-2627"
+   ],
+   "refused": false,
+   "reason": "",
+   "guardOk": true
+  },
+  {
+   "qid": "H05",
+   "set": "stress",
+   "question": "Which medical college charges the highest tuition in India?",
+   "lang": "en",
+   "session": null,
+   "answerable": false,
+   "gold": [],
+   "answer": "I do not have an official notice that answers this. Please check with the counselling authority before acting.",
+   "citations": [],
+   "refused": true,
+   "reason": "a comparison across colleges cannot be cited to a single notice",
+   "guardOk": false
+  },
+  {
+   "qid": "H06",
+   "set": "stress",
+   "question": "What is the MBBS fee at Kalinga in 2025-26?",
+   "lang": "en",
+   "session": "2025-26",
+   "answerable": true,
+   "gold": [
+    "DOC-KIMS-BBS-FEE-2526"
+   ],
+   "answer": "Kalinga Institute of Medical Sciences, Bhubaneswar — MBBS fee notice 2025-26: Annual tuition fee INR 10,25,000 — Seats approved for MBBS in this session: 100. [DOC-KIMS-BBS-FEE-2526].",
+   "citations": [
+    "DOC-KIMS-BBS-FEE-2526"
+   ],
+   "refused": false,
+   "reason": "",
+   "guardOk": true
+  },
+  {
+   "qid": "H07",
+   "set": "stress",
+   "question": "What is the MBBS bond amount in Odisha?",
+   "lang": "en",
+   "session": null,
+   "answerable": false,
+   "gold": [],
+   "answer": "I do not have an official notice that answers this. Please check with the counselling authority before acting.",
+   "citations": [],
+   "refused": true,
+   "reason": "coverage 0.49 < 0.5",
+   "guardOk": false
+  },
+  {
+   "qid": "H08",
+   "set": "stress",
+   "question": "Is there a bond at Deccan Medical College?",
+   "lang": "en",
+   "session": null,
+   "answerable": false,
+   "gold": [],
+   "answer": "I do not have an official notice that answers this. Please check with the counselling authority before acting.",
+   "citations": [],
+   "refused": true,
+   "reason": "no bond rule is published for this state or college",
+   "guardOk": false
+  },
+  {
+   "qid": "H09",
+   "set": "stress",
+   "question": "bihar me bond koto",
+   "lang": "hi-rom",
+   "session": null,
+   "answerable": true,
+   "gold": [
+    "DOC-BOND-BR-2627"
+   ],
+   "answer": "Bihar MBBS state quota bond rule 2026-27: Bond amount INR 10,00,000 — Service period 3 years in a designated district hospital in Bihar [DOC-BOND-BR-2627].",
+   "citations": [
+    "DOC-BOND-BR-2627"
+   ],
+   "refused": false,
+   "reason": "",
+   "guardOk": true
+  },
+  {
+   "qid": "H10",
+   "set": "stress",
+   "question": "What is the penalty if I leave the course early in Haryana?",
+   "lang": "en",
+   "session": null,
+   "answerable": true,
+   "gold": [
+    "DOC-BOND-HR-2627"
+   ],
+   "answer": "Haryana MBBS state quota bond rule 2026-27: When the bond is invoked If the candidate does not join the allotted college, or leaves the course before completion — Service period 2 years in a designated rural or district hospital in Haryana [DOC-BOND-HR-2627].",
+   "citations": [
+    "DOC-BOND-HR-2627"
+   ],
+   "refused": false,
+   "reason": "",
+   "guardOk": true
+  },
+  {
+   "qid": "H11",
+   "set": "stress",
+   "question": "What are the seat upgrade rules in round 3 of counselling?",
+   "lang": "en",
+   "session": null,
+   "answerable": true,
+   "gold": [
+    "DOC-MCC-RULES-2627"
+   ],
+   "answer": "MCC all-India counselling rules 2026-27: Seat upgrade A candidate who accepts an upgraded seat in round 3 loses the earlier seat immediately — Forfeiture if a candidate resigns a seat in round 2 The tuition fee for the first year is forfeited, and the candidate is barred from the stray vacancy round [DOC-MCC-RULES-2627].",
+   "citations": [
+    "DOC-MCC-RULES-2627"
+   ],
+   "refused": false,
+   "reason": "",
+   "guardOk": true
+  },
+  {
+   "qid": "H12",
+   "set": "stress",
+   "question": "What is the bus fee for the Jhajjar route?",
+   "lang": "en",
+   "session": "2026-27",
+   "answerable": true,
+   "gold": [
+    "DOC-NOISE-TRANSPORT-2627"
+   ],
+   "answer": "Saraswati Medical College transport and bus fee circular: Jhajjar to college INR 34,000 — Rohtak city to college INR 28,000 [DOC-NOISE-TRANSPORT-2627].",
+   "citations": [
+    "DOC-NOISE-TRANSPORT-2627"
+   ],
+   "refused": false,
+   "reason": "",
+   "guardOk": true
+  }
+ ],
+ "jobs": [
+  {
+   "jid": "J1",
+   "post": "Senior Consultant, Intensive Care",
+   "hospital": "Deccan Institute of Critical Care, Hyderabad",
+   "min_years": 10,
+   "degree_level": "MD",
+   "ranked": [
+    {
+     "rank": 1,
+     "name": "P. Sen",
+     "score": 1.0,
+     "eligible": true,
+     "explanation": [
+      "DNB Critical Care, 12y relevant service; specialty match, skills icu protocols, sepsis, ventilator management.",
+      "Meets Senior Consultant, Intensive Care eligibility (MD, 10y minimum) and scores 1.00 on experience 1.00, skills 0.75."
+     ]
+    },
+    {
+     "rank": 2,
+     "name": "T. Nair",
+     "score": -9.091,
+     "eligible": false,
+     "explanation": [
+      "DNB Critical Care, 8y relevant service; specialty match, skills ecmo, sepsis, ventilator management.",
+      "Not eligible for this post: 8y < 10y required."
+     ]
+    },
+    {
+     "rank": 3,
+     "name": "B. Kulkarni",
+     "score": -9.146,
+     "eligible": false,
+     "explanation": [
+      "MS Critical Care, 6y relevant service; specialty match, skills ecmo, sepsis, ventilator management.",
+      "Not eligible for this post: 6y < 10y required."
+     ]
+    },
+    {
+     "rank": 4,
+     "name": "I. Iyer",
+     "score": -9.161,
+     "eligible": false,
+     "explanation": [
+      "MD Critical Care, 8y relevant service; specialty match, skills icu protocols, sepsis.",
+      "Not eligible for this post: 8y < 10y required."
+     ]
+    },
+    {
+     "rank": 5,
+     "name": "I. Bhattacharya",
+     "score": -9.205,
+     "eligible": false,
+     "explanation": [
+      "MS Critical Care, 9y relevant service; specialty match, skills sepsis.",
+      "Not eligible for this post: 9y < 10y required."
+     ]
+    },
+    {
+     "rank": 6,
+     "name": "N. Qureshi",
+     "score": -9.23,
+     "eligible": false,
+     "explanation": [
+      "MS Critical Care, 6y relevant service; specialty match, skills icu protocols, sepsis.",
+      "Not eligible for this post: 6y < 10y required."
+     ]
+    },
+    {
+     "rank": 7,
+     "name": "P. Sinha",
+     "score": -9.539,
+     "eligible": false,
+     "explanation": [
+      "MD Emergency Medicine, 11y relevant service; specialty match, skills none.",
+      "Not eligible for this post: specialty Emergency Medicine vs Critical Care."
+     ]
+    },
+    {
+     "rank": 8,
+     "name": "T. Banerjee",
+     "score": -9.54,
+     "eligible": false,
+     "explanation": [
+      "MD Emergency Medicine, 12y relevant service; specialty match, skills none.",
+      "Not eligible for this post: specialty Emergency Medicine vs Critical Care."
+     ]
+    },
+    {
+     "rank": 9,
+     "name": "T. Mishra",
+     "score": -9.54,
+     "eligible": false,
+     "explanation": [
+      "MD Radiology, 15y relevant service; specialty match, skills none.",
+      "Not eligible for this post: specialty Radiology vs Critical Care."
+     ]
+    },
+    {
+     "rank": 10,
+     "name": "R. Sethi",
+     "score": -9.542,
+     "eligible": false,
+     "explanation": [
+      "MD Community Medicine, 15y relevant service; specialty match, skills none.",
+      "Not eligible for this post: specialty Community Medicine vs Critical Care."
+     ]
+    }
+   ],
+   "fairness": {
+    "applicant": {
+     "pool": {
+      "woman": 12,
+      "man": 18
+     },
+     "top": {
+      "woman": 5,
+      "man": 5
+     },
+     "rates": {
+      "woman": 0.417,
+      "man": 0.278
+     },
+     "ratio": 0.667,
+     "passes": false
+    },
+    "eligible": {
+     "pool": {
+      "man": 1
+     },
+     "top": {
+      "man": 1
+     },
+     "rates": {
+      "man": 1.0
+     },
+     "ratio": 1.0,
+     "passes": true
+    },
+    "tierTop": {
+     "1": 1,
+     "2": 5,
+     "3": 4
+    },
+    "tierPool": {
+     "1": 6,
+     "2": 12,
+     "3": 12
+    }
+   }
+  },
+  {
+   "jid": "J2",
+   "post": "Assistant Professor, General Medicine",
+   "hospital": "Shanti Medical College, Patna",
+   "min_years": 3,
+   "degree_level": "MD",
+   "ranked": [
+    {
+     "rank": 1,
+     "name": "P. Reddy",
+     "score": 1.054,
+     "eligible": true,
+     "explanation": [
+      "MD General Medicine, 9y relevant service; specialty match, skills clinical teaching, internal medicine, research.",
+      "Meets Assistant Professor, General Medicine eligibility (MD, 3y minimum) and scores 1.05 on experience 1.00, skills 1.00."
+     ]
+    },
+    {
+     "rank": 2,
+     "name": "L. Das",
+     "score": 1.05,
+     "eligible": true,
+     "explanation": [
+      "MD General Medicine, 8y relevant service; specialty match, skills clinical teaching, internal medicine, research.",
+      "Meets Assistant Professor, General Medicine eligibility (MD, 3y minimum) and scores 1.05 on experience 1.00, skills 1.00."
+     ]
+    },
+    {
+     "rank": 3,
+     "name": "I. Rao",
+     "score": 0.979,
+     "eligible": true,
+     "explanation": [
+      "MS General Medicine, 5y relevant service; specialty match, skills internal medicine, research.",
+      "Meets Assistant Professor, General Medicine eligibility (MD, 3y minimum) and scores 0.98 on experience 1.00, skills 0.67."
+     ]
+    },
+    {
+     "rank": 4,
+     "name": "D. Mukherjee",
+     "score": 0.961,
+     "eligible": true,
+     "explanation": [
+      "DNB General Medicine, 15y relevant service; specialty match, skills clinical teaching, internal medicine.",
+      "Meets Assistant Professor, General Medicine eligibility (MD, 3y minimum) and scores 0.96 on experience 1.00, skills 0.67."
+     ]
+    },
+    {
+     "rank": 5,
+     "name": "T. Patel",
+     "score": 0.961,
+     "eligible": true,
+     "explanation": [
+      "MD General Medicine, 8y relevant service; specialty match, skills clinical teaching, research.",
+      "Meets Assistant Professor, General Medicine eligibility (MD, 3y minimum) and scores 0.96 on experience 1.00, skills 0.67."
+     ]
+    },
+    {
+     "rank": 6,
+     "name": "B. Chowdhury",
+     "score": 0.868,
+     "eligible": true,
+     "explanation": [
+      "MD General Medicine, 11y relevant service; specialty match, skills research.",
+      "Meets Assistant Professor, General Medicine eligibility (MD, 3y minimum) and scores 0.87 on experience 1.00, skills 0.33."
+     ]
+    },
+    {
+     "rank": 7,
+     "name": "S. Verma",
+     "score": -9.294,
+     "eligible": false,
+     "explanation": [
+      "MD General Medicine, 0y relevant service; specialty match, skills clinical teaching, internal medicine, research.",
+      "Not eligible for this post: 0y < 3y required."
+     ]
+    },
+    {
+     "rank": 8,
+     "name": "S. Anand",
+     "score": -9.52,
+     "eligible": false,
+     "explanation": [
+      "MD Community Medicine, 5y relevant service; specialty match, skills none.",
+      "Not eligible for this post: specialty Community Medicine vs General Medicine."
+     ]
+    },
+    {
+     "rank": 9,
+     "name": "P. Sinha",
+     "score": -9.522,
+     "eligible": false,
+     "explanation": [
+      "MD Emergency Medicine, 11y relevant service; specialty match, skills none.",
+      "Not eligible for this post: specialty Emergency Medicine vs General Medicine."
+     ]
+    },
+    {
+     "rank": 10,
+     "name": "K. Haldar",
+     "score": -9.523,
+     "eligible": false,
+     "explanation": [
+      "MBBS Radiology, 5y relevant service; specialty match, skills none.",
+      "Not eligible for this post: MBBS does not meet MD requirement; specialty Radiology vs General Medicine."
+     ]
+    }
+   ],
+   "fairness": {
+    "applicant": {
+     "pool": {
+      "woman": 12,
+      "man": 18
+     },
+     "top": {
+      "man": 7,
+      "woman": 3
+     },
+     "rates": {
+      "woman": 0.25,
+      "man": 0.389
+     },
+     "ratio": 0.643,
+     "passes": false
+    },
+    "eligible": {
+     "pool": {
+      "man": 4,
+      "woman": 2
+     },
+     "top": {
+      "man": 4,
+      "woman": 2
+     },
+     "rates": {
+      "man": 1.0,
+      "woman": 1.0
+     },
+     "ratio": 1.0,
+     "passes": true
+    },
+    "tierTop": {
+     "1": 2,
+     "2": 3,
+     "3": 5
+    },
+    "tierPool": {
+     "1": 6,
+     "2": 12,
+     "3": 12
+    }
+   }
+  },
+  {
+   "jid": "J3",
+   "post": "Consultant, Emergency Medicine",
+   "hospital": "Rajarhat Medical College & Hospital, Kolkata",
+   "min_years": 5,
+   "degree_level": "MD",
+   "ranked": [
+    {
+     "rank": 1,
+     "name": "T. Banerjee",
+     "score": 0.922,
+     "eligible": true,
+     "explanation": [
+      "MD Emergency Medicine, 12y relevant service; specialty match, skills acls, triage.",
+      "Meets Consultant, Emergency Medicine eligibility (MD, 5y minimum) and scores 0.92 on experience 1.00, skills 0.50."
+     ]
+    },
+    {
+     "rank": 2,
+     "name": "P. Sinha",
+     "score": 0.86,
+     "eligible": true,
+     "explanation": [
+      "MD Emergency Medicine, 11y relevant service; specialty match, skills emergency ultrasound.",
+      "Meets Consultant, Emergency Medicine eligibility (MD, 5y minimum) and scores 0.86 on experience 1.00, skills 0.25."
+     ]
+    },
+    {
+     "rank": 3,
+     "name": "D. Pillai",
+     "score": -9.277,
+     "eligible": false,
+     "explanation": [
+      "MS Emergency Medicine, 1y relevant service; specialty match, skills emergency ultrasound, trauma care, triage.",
+      "Not eligible for this post: 1y < 5y required."
+     ]
+    },
+    {
+     "rank": 4,
+     "name": "L. Ghosh",
+     "score": -9.284,
+     "eligible": false,
+     "explanation": [
+      "DNB Emergency Medicine, 1y relevant service; specialty match, skills emergency ultrasound, trauma care, triage.",
+      "Not eligible for this post: 1y < 5y required."
+     ]
+    },
+    {
+     "rank": 5,
+     "name": "G. Menon",
+     "score": -9.359,
+     "eligible": false,
+     "explanation": [
+      "MD Emergency Medicine, 0y relevant service; specialty match, skills emergency ultrasound, trauma care, triage.",
+      "Not eligible for this post: 0y < 5y required."
+     ]
+    },
+    {
+     "rank": 6,
+     "name": "S. Joshi",
+     "score": -9.529,
+     "eligible": false,
+     "explanation": [
+      "DNB Radiology, 8y relevant service; specialty match, skills none.",
+      "Not eligible for this post: specialty Radiology vs Emergency Medicine."
+     ]
+    },
+    {
+     "rank": 7,
+     "name": "P. Reddy",
+     "score": -9.534,
+     "eligible": false,
+     "explanation": [
+      "MD General Medicine, 9y relevant service; specialty match, skills none.",
+      "Not eligible for this post: specialty General Medicine vs Emergency Medicine."
+     ]
+    },
+    {
+     "rank": 8,
+     "name": "P. Dutta",
+     "score": -9.537,
+     "eligible": false,
+     "explanation": [
+      "MD Community Medicine, 9y relevant service; specialty match, skills none.",
+      "Not eligible for this post: specialty Community Medicine vs Emergency Medicine."
+     ]
+    },
+    {
+     "rank": 9,
+     "name": "R. Sethi",
+     "score": -9.537,
+     "eligible": false,
+     "explanation": [
+      "MD Community Medicine, 15y relevant service; specialty match, skills none.",
+      "Not eligible for this post: specialty Community Medicine vs Emergency Medicine."
+     ]
+    },
+    {
+     "rank": 10,
+     "name": "B. Fernandes",
+     "score": -9.539,
+     "eligible": false,
+     "explanation": [
+      "MBBS Radiology, 8y relevant service; specialty match, skills none.",
+      "Not eligible for this post: MBBS does not meet MD requirement; specialty Radiology vs Emergency Medicine."
+     ]
+    }
+   ],
+   "fairness": {
+    "applicant": {
+     "pool": {
+      "woman": 12,
+      "man": 18
+     },
+     "top": {
+      "woman": 5,
+      "man": 5
+     },
+     "rates": {
+      "woman": 0.417,
+      "man": 0.278
+     },
+     "ratio": 0.667,
+     "passes": false
+    },
+    "eligible": {
+     "pool": {
+      "man": 2
+     },
+     "top": {
+      "man": 2
+     },
+     "rates": {
+      "man": 1.0
+     },
+     "ratio": 1.0,
+     "passes": true
+    },
+    "tierTop": {
+     "1": 1,
+     "2": 7,
+     "3": 2
+    },
+    "tierPool": {
+     "1": 6,
+     "2": 12,
+     "3": 12
+    }
+   }
+  },
+  {
+   "jid": "J4",
+   "post": "Junior Resident, Radiology",
+   "hospital": "Kalinga Institute of Medical Sciences, Bhubaneswar",
+   "min_years": 0,
+   "degree_level": "MBBS",
+   "ranked": [
+    {
+     "rank": 1,
+     "name": "B. Fernandes",
+     "score": 0.927,
+     "eligible": true,
+     "explanation": [
+      "MBBS Radiology, 8y relevant service; specialty match, skills ct reporting.",
+      "Meets Junior Resident, Radiology eligibility (MBBS, 0y minimum) and scores 0.93 on experience 1.00, skills 0.50."
+     ]
+    },
+    {
+     "rank": 2,
+     "name": "I. Bose",
+     "score": 0.92,
+     "eligible": true,
+     "explanation": [
+      "MBBS Radiology, 15y relevant service; specialty match, skills ct reporting.",
+      "Meets Junior Resident, Radiology eligibility (MBBS, 0y minimum) and scores 0.92 on experience 1.00, skills 0.50."
+     ]
+    },
+    {
+     "rank": 3,
+     "name": "K. Haldar",
+     "score": 0.896,
+     "eligible": true,
+     "explanation": [
+      "MBBS Radiology, 5y relevant service; specialty match, skills pacs.",
+      "Meets Junior Resident, Radiology eligibility (MBBS, 0y minimum) and scores 0.90 on experience 1.00, skills 0.50."
+     ]
+    },
+    {
+     "rank": 4,
+     "name": "T. Mishra",
+     "score": -8.942,
+     "eligible": false,
+     "explanation": [
+      "MD Radiology, 15y relevant service; specialty match, skills ct reporting, pacs.",
+      "Not eligible for this post: MD does not meet MBBS requirement."
+     ]
+    },
+    {
+     "rank": 5,
+     "name": "K. Kaur",
+     "score": -8.947,
+     "eligible": false,
+     "explanation": [
+      "MS Radiology, 2y relevant service; specialty match, skills ct reporting, pacs.",
+      "Not eligible for this post: MS does not meet MBBS requirement."
+     ]
+    },
+    {
+     "rank": 6,
+     "name": "S. Joshi",
+     "score": -9.09,
+     "eligible": false,
+     "explanation": [
+      "DNB Radiology, 8y relevant service; specialty match, skills pacs.",
+      "Not eligible for this post: DNB does not meet MBBS requirement."
+     ]
+    },
+    {
+     "rank": 7,
+     "name": "S. Agarwal",
+     "score": -9.531,
+     "eligible": false,
+     "explanation": [
+      "MS Community Medicine, 9y relevant service; specialty match, skills none.",
+      "Not eligible for this post: MS does not meet MBBS requirement; specialty Community Medicine vs Radiology."
+     ]
+    },
+    {
+     "rank": 8,
+     "name": "R. Sethi",
+     "score": -9.535,
+     "eligible": false,
+     "explanation": [
+      "MD Community Medicine, 15y relevant service; specialty match, skills none.",
+      "Not eligible for this post: MD does not meet MBBS requirement; specialty Community Medicine vs Radiology."
+     ]
+    },
+    {
+     "rank": 9,
+     "name": "B. Kulkarni",
+     "score": -9.538,
+     "eligible": false,
+     "explanation": [
+      "MS Critical Care, 6y relevant service; specialty match, skills none.",
+      "Not eligible for this post: MS does not meet MBBS requirement; specialty Critical Care vs Radiology."
+     ]
+    },
+    {
+     "rank": 10,
+     "name": "T. Banerjee",
+     "score": -9.538,
+     "eligible": false,
+     "explanation": [
+      "MD Emergency Medicine, 12y relevant service; specialty match, skills none.",
+      "Not eligible for this post: MD does not meet MBBS requirement; specialty Emergency Medicine vs Radiology."
+     ]
+    }
+   ],
+   "fairness": {
+    "applicant": {
+     "pool": {
+      "woman": 12,
+      "man": 18
+     },
+     "top": {
+      "woman": 4,
+      "man": 6
+     },
+     "rates": {
+      "woman": 0.333,
+      "man": 0.333
+     },
+     "ratio": 1.0,
+     "passes": true
+    },
+    "eligible": {
+     "pool": {
+      "man": 3
+     },
+     "top": {
+      "man": 3
+     },
+     "rates": {
+      "man": 1.0
+     },
+     "ratio": 1.0,
+     "passes": true
+    },
+    "tierTop": {
+     "1": 2,
+     "2": 3,
+     "3": 5
+    },
+    "tierPool": {
+     "1": 6,
+     "2": 12,
+     "3": 12
+    }
+   }
+  },
+  {
+   "jid": "J5",
+   "post": "Assistant Professor, Community Medicine",
+   "hospital": "Ganges Institute of Medical Sciences, Varanasi",
+   "min_years": 2,
+   "degree_level": "MD",
+   "ranked": [
+    {
+     "rank": 1,
+     "name": "R. Sethi",
+     "score": 1.068,
+     "eligible": true,
+     "explanation": [
+      "MD Community Medicine, 15y relevant service; specialty match, skills biostatistics, epidemiology, field visits, teaching.",
+      "Meets Assistant Professor, Community Medicine eligibility (MD, 2y minimum) and scores 1.07 on experience 1.00, skills 1.00."
+     ]
+    },
+    {
+     "rank": 2,
+     "name": "P. Dutta",
+     "score": 0.943,
+     "eligible": true,
+     "explanation": [
+      "MD Community Medicine, 9y relevant service; specialty match, skills biostatistics, field visits.",
+      "Meets Assistant Professor, Community Medicine eligibility (MD, 2y minimum) and scores 0.94 on experience 1.00, skills 0.50."
+     ]
+    },
+    {
+     "rank": 3,
+     "name": "S. Agarwal",
+     "score": 0.921,
+     "eligible": true,
+     "explanation": [
+      "MS Community Medicine, 9y relevant service; specialty match, skills epidemiology, teaching.",
+      "Meets Assistant Professor, Community Medicine eligibility (MD, 2y minimum) and scores 0.92 on experience 1.00, skills 0.50."
+     ]
+    },
+    {
+     "rank": 4,
+     "name": "S. Anand",
+     "score": 0.883,
+     "eligible": true,
+     "explanation": [
+      "MD Community Medicine, 5y relevant service; specialty match, skills epidemiology.",
+      "Meets Assistant Professor, Community Medicine eligibility (MD, 2y minimum) and scores 0.88 on experience 1.00, skills 0.25."
+     ]
+    },
+    {
+     "rank": 5,
+     "name": "J. Sharma",
+     "score": -9.335,
+     "eligible": false,
+     "explanation": [
+      "DNB Community Medicine, 0y relevant service; specialty match, skills biostatistics, epidemiology, teaching.",
+      "Not eligible for this post: 0y < 2y required."
+     ]
+    },
+    {
+     "rank": 6,
+     "name": "V. Thakur",
+     "score": -9.424,
+     "eligible": false,
+     "explanation": [
+      "MD Community Medicine, 0y relevant service; specialty match, skills field visits, teaching.",
+      "Not eligible for this post: 0y < 2y required."
+     ]
+    },
+    {
+     "rank": 7,
+     "name": "I. Rao",
+     "score": -9.517,
+     "eligible": false,
+     "explanation": [
+      "MS General Medicine, 5y relevant service; specialty match, skills none.",
+      "Not eligible for this post: specialty General Medicine vs Community Medicine."
+     ]
+    },
+    {
+     "rank": 8,
+     "name": "K. Haldar",
+     "score": -9.524,
+     "eligible": false,
+     "explanation": [
+      "MBBS Radiology, 5y relevant service; specialty match, skills none.",
+      "Not eligible for this post: MBBS does not meet MD requirement; specialty Radiology vs Community Medicine."
+     ]
+    },
+    {
+     "rank": 9,
+     "name": "P. Sinha",
+     "score": -9.524,
+     "eligible": false,
+     "explanation": [
+      "MD Emergency Medicine, 11y relevant service; specialty match, skills none.",
+      "Not eligible for this post: specialty Emergency Medicine vs Community Medicine."
+     ]
+    },
+    {
+     "rank": 10,
+     "name": "I. Bhattacharya",
+     "score": -9.525,
+     "eligible": false,
+     "explanation": [
+      "MS Critical Care, 9y relevant service; specialty match, skills none.",
+      "Not eligible for this post: specialty Critical Care vs Community Medicine."
+     ]
+    }
+   ],
+   "fairness": {
+    "applicant": {
+     "pool": {
+      "woman": 12,
+      "man": 18
+     },
+     "top": {
+      "woman": 4,
+      "man": 6
+     },
+     "rates": {
+      "woman": 0.333,
+      "man": 0.333
+     },
+     "ratio": 1.0,
+     "passes": true
+    },
+    "eligible": {
+     "pool": {
+      "woman": 2,
+      "man": 2
+     },
+     "top": {
+      "woman": 2,
+      "man": 2
+     },
+     "rates": {
+      "woman": 1.0,
+      "man": 1.0
+     },
+     "ratio": 1.0,
+     "passes": true
+    },
+    "tierTop": {
+     "1": 3,
+     "2": 3,
+     "3": 4
+    },
+    "tierPool": {
+     "1": 6,
+     "2": 12,
+     "3": 12
+    }
+   }
+  }
+ ],
+ "capacity": {
+  "kv": [
+   {
+    "model": "S",
+    "params_B": 8,
+    "weights_bits": 4,
+    "weights_gb": 5.2,
+    "kv_kib_fp16": 128.0,
+    "kv_kib_int8": 64.0,
+    "kv_pool_gb": 38.0,
+    "seq_fp16": 82,
+    "seq_int8": 165,
+    "seq_gb_fp16": 0.459
+   },
+   {
+    "model": "M",
+    "params_B": 14,
+    "weights_bits": 4,
+    "weights_gb": 8.9,
+    "kv_kib_fp16": 160.0,
+    "kv_kib_int8": 80.0,
+    "kv_pool_gb": 34.3,
+    "seq_fp16": 59,
+    "seq_int8": 119,
+    "seq_gb_fp16": 0.573
+   },
+   {
+    "model": "L",
+    "params_B": 32,
+    "weights_bits": 4,
+    "weights_gb": 19.0,
+    "kv_kib_fp16": 256.0,
+    "kv_kib_int8": 128.0,
+    "kv_pool_gb": 24.2,
+    "seq_fp16": 26,
+    "seq_int8": 52,
+    "seq_gb_fp16": 0.918
+   },
+   {
+    "model": "L",
+    "params_B": 32,
+    "weights_bits": 8,
+    "weights_gb": 34.5,
+    "kv_kib_fp16": 256.0,
+    "kv_kib_int8": 128.0,
+    "kv_pool_gb": 8.7,
+    "seq_fp16": 9,
+    "seq_int8": 18,
+    "seq_gb_fp16": 0.918
+   },
+   {
+    "model": "XL",
+    "params_B": 70,
+    "weights_bits": 4,
+    "weights_gb": 40.5,
+    "kv_kib_fp16": 320.0,
+    "kv_kib_int8": 160.0,
+    "kv_pool_gb": 2.7,
+    "seq_fp16": 2,
+    "seq_int8": 4,
+    "seq_gb_fp16": 1.147
+   },
+   {
+    "model": "XL",
+    "params_B": 70,
+    "weights_bits": 8,
+    "weights_gb": 73.0,
+    "kv_kib_fp16": 320.0,
+    "kv_kib_int8": 160.0,
+    "kv_pool_gb": -29.8,
+    "seq_fp16": 0,
+    "seq_int8": 0,
+    "seq_gb_fp16": 1.147
+   }
+  ],
+  "throughput": [
+   {
+    "model": "S",
+    "weights_gb": 5.2,
+    "seqs": 82,
+    "step_ms": 44.6,
+    "decode_ideal": 1838,
+    "decode_real": 1287,
+    "decode_single": 118,
+    "prefill_tok_s": 2559
+   },
+   {
+    "model": "M",
+    "weights_gb": 8.9,
+    "seqs": 59,
+    "step_ms": 44.5,
+    "decode_ideal": 1325,
+    "decode_real": 928,
+    "decode_single": 74,
+    "prefill_tok_s": 1462
+   },
+   {
+    "model": "L",
+    "weights_gb": 19.0,
+    "seqs": 26,
+    "step_ms": 44.6,
+    "decode_ideal": 582,
+    "decode_real": 408,
+    "decode_single": 36,
+    "prefill_tok_s": 640
+   },
+   {
+    "model": "XL",
+    "weights_gb": 40.5,
+    "seqs": 2,
+    "step_ms": 44.6,
+    "decode_ideal": 45,
+    "decode_real": 31,
+    "decode_single": 15,
+    "prefill_tok_s": 292
+   }
+  ],
+  "traffic": [
+   {
+    "scenario": "Normal day",
+    "chats_day": 1500,
+    "turns_day": 9000,
+    "turns_s_peak": 0.44,
+    "prompt_tok_s_raw": 1400,
+    "output_tok_s": 122,
+    "prompt_tok_s_design": 385
+   },
+   {
+    "scenario": "Counselling season",
+    "chats_day": 22000,
+    "turns_day": 132000,
+    "turns_s_peak": 6.42,
+    "prompt_tok_s_raw": 20533,
+    "output_tok_s": 1797,
+    "prompt_tok_s_design": 5647
+   },
+   {
+    "scenario": "Result day",
+    "chats_day": 60000,
+    "turns_day": 360000,
+    "turns_s_peak": 17.5,
+    "prompt_tok_s_raw": 56000,
+    "output_tok_s": 4900,
+    "prompt_tok_s_design": 15400
+   }
+  ],
+  "tco": {
+   "power_kwh_normal": 15.2,
+   "power_kwh_season": 16.9,
+   "power_year": 56370,
+   "people3": 7160000,
+   "one_card": 9546609,
+   "two_card": 10567588,
+   "cash_excl_sunk": 7856609,
+   "chats3": 7400000,
+   "cost_per_chat": 1.29,
+   "cost_per_1000_chats": 1290,
+   "marginal_per_1000": 94,
+   "people_share": 75,
+   "cloud_per_chat": 1.092,
+   "cloud3": 8080800,
+   "breakeven_chats_year": 2914105,
+   "resumes3": 864000,
+   "cloud_per_resume": 0.13,
+   "onprem_per_resume": 1.3,
+   "cloud_resumes3": 111974
+  },
+  "batch": {
+   "embed_h": 1.9,
+   "rerank_h": 1.9,
+   "explain_h": 10.8,
+   "ocr_h": 26.7,
+   "total_h": 41.2,
+   "weekly_h": 0.69,
+   "nights_at_8h": 5.1
+  },
+  "rental": {
+   "spare_h": 5658,
+   "sellable_h": 4526,
+   "price": 60,
+   "revenue_year": 108624
+  }
+ },
+ "corpus": [
+  {
+   "doc_id": "DOC-SMC-PAT-FEE-2526",
+   "title": "Shanti Medical College, Patna — MBBS fee notice 2025-26",
+   "session": "2025-26",
+   "status": "superseded",
+   "doc_type": "fee_notice",
+   "text": "Official MBBS fee notice for Shanti Medical College, Patna, Bihar.\nSession 2025-26. Issued by the Bihar Private Medical Colleges Fee Committee. This notice replaces the 2024-25 notice for the same programme and college.\n\n| Head | Amount per year |\n| Annual tuition fee | INR 9,50,000 |\n| Hostel and mess charges | INR 1,20,000 |\n| One-time admission and caution deposit | INR 2,50,000 |\n| Other charges, library, laboratory and insurance | INR 45,000 |\n| Total payable in the first year | INR 13,65,000 |\n\nSeats approved for MBBS in this session: 150.\nThe tuition fee above is for the MBBS programme only. Fees for BSc Nursing, BDS and postgraduate courses are notified separately and are not covered by this notice."
+  },
+  {
+   "doc_id": "DOC-SMC-PAT-FEE-2627",
+   "title": "Shanti Medical College, Patna — MBBS fee notice 2026-27",
+   "session": "2026-27",
+   "status": "active",
+   "doc_type": "fee_notice",
+   "text": "Official MBBS fee notice for Shanti Medical College, Patna, Bihar.\nSession 2026-27. Issued by the Bihar Private Medical Colleges Fee Committee. This notice replaces the 2025-26 notice for the same programme and college.\n\n| Head | Amount per year |\n| Annual tuition fee | INR 10,40,000 |\n| Hostel and mess charges | INR 1,30,000 |\n| One-time admission and caution deposit | INR 2,50,000 |\n| Other charges, library, laboratory and insurance | INR 48,000 |\n| Total payable in the first year | INR 14,68,000 |\n\nSeats approved for MBBS in this session: 150.\nThe tuition fee above is for the MBBS programme only. Fees for BSc Nursing, BDS and postgraduate courses are notified separately and are not covered by this notice."
+  },
+  {
+   "doc_id": "DOC-GIMS-VNS-FEE-2526",
+   "title": "Ganges Institute of Medical Sciences, Varanasi — MBBS fee notice 2025-26",
+   "session": "2025-26",
+   "status": "superseded",
+   "doc_type": "fee_notice",
+   "text": "Official MBBS fee notice for Ganges Institute of Medical Sciences, Varanasi, Uttar Pradesh.\nSession 2025-26. Issued by the UP Medical Education Fee Board. This notice replaces the 2024-25 notice for the same programme and college.\n\n| Head | Amount per year |\n| Annual tuition fee | INR 11,00,000 |\n| Hostel and mess charges | INR 95,000 |\n| One-time admission and caution deposit | INR 2,00,000 |\n| Other charges, library, laboratory and insurance | INR 38,000 |\n| Total payable in the first year | INR 14,33,000 |\n\nSeats approved for MBBS in this session: 100.\nThe tuition fee above is for the MBBS programme only. Fees for BSc Nursing, BDS and postgraduate courses are notified separately and are not covered by this notice."
+  },
+  {
+   "doc_id": "DOC-GIMS-VNS-FEE-2627",
+   "title": "Ganges Institute of Medical Sciences, Varanasi — MBBS fee notice 2026-27",
+   "session": "2026-27",
+   "status": "active",
+   "doc_type": "fee_notice",
+   "text": "Official MBBS fee notice for Ganges Institute of Medical Sciences, Varanasi, Uttar Pradesh.\nSession 2026-27. Issued by the UP Medical Education Fee Board. This notice replaces the 2025-26 notice for the same programme and college.\n\n| Head | Amount per year |\n| Annual tuition fee | INR 11,85,000 |\n| Hostel and mess charges | INR 1,05,000 |\n| One-time admission and caution deposit | INR 2,00,000 |\n| Other charges, library, laboratory and insurance | INR 41,000 |\n| Total payable in the first year | INR 15,31,000 |\n\nSeats approved for MBBS in this session: 100.\nThe tuition fee above is for the MBBS programme only. Fees for BSc Nursing, BDS and postgraduate courses are notified separately and are not covered by this notice."
+  },
+  {
+   "doc_id": "DOC-DMC-HYD-FEE-2526",
+   "title": "Deccan Medical College, Hyderabad — MBBS fee notice 2025-26",
+   "session": "2025-26",
+   "status": "superseded",
+   "doc_type": "fee_notice",
+   "text": "Official MBBS fee notice for Deccan Medical College, Hyderabad, Telangana.\nSession 2025-26. Issued by the Telangana Fee Regulatory Committee. This notice replaces the 2024-25 notice for the same programme and college.\n\n| Head | Amount per year |\n| Annual tuition fee | INR 13,75,000 |\n| Hostel and mess charges | INR 1,40,000 |\n| One-time admission and caution deposit | INR 3,00,000 |\n| Other charges, library, laboratory and insurance | INR 55,000 |\n| Total payable in the first year | INR 18,70,000 |\n\nSeats approved for MBBS in this session: 150.\nThe tuition fee above is for the MBBS programme only. Fees for BSc Nursing, BDS and postgraduate courses are notified separately and are not covered by this notice."
+  },
+  {
+   "doc_id": "DOC-DMC-HYD-FEE-2627",
+   "title": "Deccan Medical College, Hyderabad — MBBS fee notice 2026-27",
+   "session": "2026-27",
+   "status": "active",
+   "doc_type": "fee_notice",
+   "text": "Official MBBS fee notice for Deccan Medical College, Hyderabad, Telangana.\nSession 2026-27. Issued by the Telangana Fee Regulatory Committee. This notice replaces the 2025-26 notice for the same programme and college.\n\n| Head | Amount per year |\n| Annual tuition fee | INR 14,60,000 |\n| Hostel and mess charges | INR 1,48,000 |\n| One-time admission and caution deposit | INR 3,00,000 |\n| Other charges, library, laboratory and insurance | INR 58,000 |\n| Total payable in the first year | INR 19,66,000 |\n\nSeats approved for MBBS in this session: 150.\nThe tuition fee above is for the MBBS programme only. Fees for BSc Nursing, BDS and postgraduate courses are notified separately and are not covered by this notice."
+  },
+  {
+   "doc_id": "DOC-RMCH-KOL-FEE-2526",
+   "title": "Rajarhat Medical College & Hospital, Kolkata — MBBS fee notice 2025-26",
+   "session": "2025-26",
+   "status": "superseded",
+   "doc_type": "fee_notice",
+   "text": "Official MBBS fee notice for Rajarhat Medical College & Hospital, Kolkata, West Bengal.\nSession 2025-26. Issued by the West Bengal Fee Regulatory Committee. This notice replaces the 2024-25 notice for the same programme and college.\n\n| Head | Amount per year |\n| Annual tuition fee | INR 6,80,000 |\n| Hostel and mess charges | INR 84,000 |\n| One-time admission and caution deposit | INR 1,50,000 |\n| Other charges, library, laboratory and insurance | INR 32,000 |\n| Total payable in the first year | INR 9,46,000 |\n\nSeats approved for MBBS in this session: 125.\nThe tuition fee above is for the MBBS programme only. Fees for BSc Nursing, BDS and postgraduate courses are notified separately and are not covered by this notice."
+  },
+  {
+   "doc_id": "DOC-RMCH-KOL-FEE-2627",
+   "title": "Rajarhat Medical College & Hospital, Kolkata — MBBS fee notice 2026-27",
+   "session": "2026-27",
+   "status": "active",
+   "doc_type": "fee_notice",
+   "text": "Official MBBS fee notice for Rajarhat Medical College & Hospital, Kolkata, West Bengal.\nSession 2026-27. Issued by the West Bengal Fee Regulatory Committee. This notice replaces the 2025-26 notice for the same programme and college.\n\n| Head | Amount per year |\n| Annual tuition fee | INR 7,25,000 |\n| Hostel and mess charges | INR 92,000 |\n| One-time admission and caution deposit | INR 1,50,000 |\n| Other charges, library, laboratory and insurance | INR 34,000 |\n| Total payable in the first year | INR 10,01,000 |\n\nSeats approved for MBBS in this session: 125.\nThe tuition fee above is for the MBBS programme only. Fees for BSc Nursing, BDS and postgraduate courses are notified separately and are not covered by this notice."
+  },
+  {
+   "doc_id": "DOC-KIMS-BBS-FEE-2526",
+   "title": "Kalinga Institute of Medical Sciences, Bhubaneswar — MBBS fee notice 2025-26",
+   "session": "2025-26",
+   "status": "superseded",
+   "doc_type": "fee_notice",
+   "text": "Official MBBS fee notice for Kalinga Institute of Medical Sciences, Bhubaneswar, Odisha.\nSession 2025-26. Issued by the Odisha Medical Education Fee Panel. This notice replaces the 2024-25 notice for the same programme and college.\n\n| Head | Amount per year |\n| Annual tuition fee | INR 10,25,000 |\n| Hostel and mess charges | INR 1,10,000 |\n| One-time admission and caution deposit | INR 2,00,000 |\n| Other charges, library, laboratory and insurance | INR 41,000 |\n| Total payable in the first year | INR 13,76,000 |\n\nSeats approved for MBBS in this session: 100.\nThe tuition fee above is for the MBBS programme only. Fees for BSc Nursing, BDS and postgraduate courses are notified separately and are not covered by this notice."
+  },
+  {
+   "doc_id": "DOC-KIMS-BBS-FEE-2627",
+   "title": "Kalinga Institute of Medical Sciences, Bhubaneswar — MBBS fee notice 2026-27",
+   "session": "2026-27",
+   "status": "active",
+   "doc_type": "fee_notice",
+   "text": "Official MBBS fee notice for Kalinga Institute of Medical Sciences, Bhubaneswar, Odisha.\nSession 2026-27. Issued by the Odisha Medical Education Fee Panel. This notice replaces the 2025-26 notice for the same programme and college.\n\n| Head | Amount per year |\n| Annual tuition fee | INR 10,95,000 |\n| Hostel and mess charges | INR 1,18,000 |\n| One-time admission and caution deposit | INR 2,00,000 |\n| Other charges, library, laboratory and insurance | INR 44,000 |\n| Total payable in the first year | INR 14,57,000 |\n\nSeats approved for MBBS in this session: 100.\nThe tuition fee above is for the MBBS programme only. Fees for BSc Nursing, BDS and postgraduate courses are notified separately and are not covered by this notice."
+  },
+  {
+   "doc_id": "DOC-SMC-ROH-FEE-2526",
+   "title": "Saraswati Medical College, Rohtak — MBBS fee notice 2025-26",
+   "session": "2025-26",
+   "status": "superseded",
+   "doc_type": "fee_notice",
+   "text": "Official MBBS fee notice for Saraswati Medical College, Rohtak, Haryana.\nSession 2025-26. Issued by the Haryana Medical Education Fee Panel. This notice replaces the 2024-25 notice for the same programme and college.\n\n| Head | Amount per year |\n| Annual tuition fee | INR 8,90,000 |\n| Hostel and mess charges | INR 1,05,000 |\n| One-time admission and caution deposit | INR 2,00,000 |\n| Other charges, library, laboratory and insurance | INR 36,000 |\n| Total payable in the first year | INR 12,31,000 |\n\nSeats approved for MBBS in this session: 100.\nThe tuition fee above is for the MBBS programme only. Fees for BSc Nursing, BDS and postgraduate courses are notified separately and are not covered by this notice."
+  },
+  {
+   "doc_id": "DOC-SMC-ROH-FEE-2627",
+   "title": "Saraswati Medical College, Rohtak — MBBS fee notice 2026-27",
+   "session": "2026-27",
+   "status": "active",
+   "doc_type": "fee_notice",
+   "text": "Official MBBS fee notice for Saraswati Medical College, Rohtak, Haryana.\nSession 2026-27. Issued by the Haryana Medical Education Fee Panel. This notice replaces the 2025-26 notice for the same programme and college.\n\n| Head | Amount per year |\n| Annual tuition fee | INR 9,55,000 |\n| Hostel and mess charges | INR 1,12,000 |\n| One-time admission and caution deposit | INR 2,10,000 |\n| Other charges, library, laboratory and insurance | INR 38,000 |\n| Total payable in the first year | INR 13,15,000 |\n\nSeats approved for MBBS in this session: 100.\nThe tuition fee above is for the MBBS programme only. Fees for BSc Nursing, BDS and postgraduate courses are notified separately and are not covered by this notice."
+  },
+  {
+   "doc_id": "DOC-BOND-BR-2627",
+   "title": "Bihar MBBS state quota bond rule 2026-27",
+   "session": "2026-27",
+   "status": "active",
+   "doc_type": "bond_rule",
+   "text": "State service bond rule for MBBS graduates admitted against state quota seats.\nState: Bihar. Session 2026-27. This rule is issued by the state medical education department.\n\n| Item | Rule |\n| Bond amount | INR 10,00,000 |\n| Service period | 3 years in a designated district hospital in Bihar |\n| When the bond is invoked | If the candidate does not join the allotted college, or leaves the course before completion |\n| Waiver | Waived only for candidates who serve in a designated aspirational district for the full bond period |\n\nThis bond applies only to state quota MBBS seats in Bihar. It does not apply to all-India quota seats, to BDS seats, or to postgraduate seats."
+  },
+  {
+   "doc_id": "DOC-BOND-UP-2627",
+   "title": "Uttar Pradesh (UP) MBBS state quota bond rule 2026-27",
+   "session": "2026-27",
+   "status": "active",
+   "doc_type": "bond_rule",
+   "text": "State service bond rule for MBBS graduates admitted against state quota seats.\nState: Uttar Pradesh (UP). Session 2026-27. This rule is issued by the state medical education department.\n\n| Item | Rule |\n| Bond amount | INR 5,00,000 |\n| Service period | 5 years in a primary health centre in a rural district of Uttar Pradesh |\n| When the bond is invoked | If the candidate does not join the allotted college, or leaves the course before completion |\n| Waiver | Waived only for candidates who serve in a designated aspirational district for the full bond period |\n\nThis bond applies only to state quota MBBS seats in Uttar Pradesh (UP). It does not apply to all-India quota seats, to BDS seats, or to postgraduate seats."
+  },
+  {
+   "doc_id": "DOC-BOND-HR-2627",
+   "title": "Haryana MBBS state quota bond rule 2026-27",
+   "session": "2026-27",
+   "status": "active",
+   "doc_type": "bond_rule",
+   "text": "State service bond rule for MBBS graduates admitted against state quota seats.\nState: Haryana. Session 2026-27. This rule is issued by the state medical education department.\n\n| Item | Rule |\n| Bond amount | INR 10,00,000 |\n| Service period | 2 years in a designated rural or district hospital in Haryana |\n| When the bond is invoked | If the candidate does not join the allotted college, or leaves the course before completion |\n| Waiver | Waived only for candidates who serve in a designated aspirational district for the full bond period |\n\nThis bond applies only to state quota MBBS seats in Haryana. It does not apply to all-India quota seats, to BDS seats, or to postgraduate seats."
+  },
+  {
+   "doc_id": "DOC-BOND-WB-2627",
+   "title": "West Bengal MBBS state quota bond rule 2026-27",
+   "session": "2026-27",
+   "status": "active",
+   "doc_type": "bond_rule",
+   "text": "State service bond rule for MBBS graduates admitted against state quota seats.\nState: West Bengal. Session 2026-27. This rule is issued by the state medical education department.\n\n| Item | Rule |\n| Bond amount | INR 8,00,000 |\n| Service period | 1 year in a rural health centre in West Bengal |\n| When the bond is invoked | If the candidate does not join the allotted college, or leaves the course before completion |\n| Waiver | Waived only for candidates who serve in a designated aspirational district for the full bond period |\n\nThis bond applies only to state quota MBBS seats in West Bengal. It does not apply to all-India quota seats, to BDS seats, or to postgraduate seats."
+  },
+  {
+   "doc_id": "DOC-NMC-SEAT-2627",
+   "title": "NMC state-wise MBBS seat matrix 2026-27",
+   "session": "2026-27",
+   "status": "active",
+   "doc_type": "seat_matrix",
+   "text": "National Medical Commission approved MBBS seat matrix for session 2026-27.\n\n| State | Government seats | Private seats | Total MBBS seats |\n| Bihar | 1,250 | 1,150 | 2,400 |\n| Uttar Pradesh | 3,900 | 3,100 | 7,000 |\n| Telangana | 2,850 | 3,650 | 6,500 |\n| West Bengal | 1,900 | 1,250 | 3,150 |\n| Odisha | 1,100 | 850 | 1,950 |\n| Haryana | 1,150 | 1,050 | 2,200 |\n\nThe matrix above is the approved intake for the 2026-27 session and supersedes the 2025-26 matrix in full."
+  },
+  {
+   "doc_id": "DOC-NMC-SEAT-2526",
+   "title": "NMC state-wise MBBS seat matrix 2025-26",
+   "session": "2025-26",
+   "status": "superseded",
+   "doc_type": "seat_matrix",
+   "text": "National Medical Commission approved MBBS seat matrix for session 2025-26.\n\n| State | Government seats | Private seats | Total MBBS seats |\n| Bihar | 1,200 | 1,050 | 2,250 |\n| Uttar Pradesh | 3,800 | 3,000 | 6,800 |\n| Telangana | 2,800 | 3,500 | 6,300 |\n| West Bengal | 1,850 | 1,200 | 3,050 |\n| Odisha | 1,050 | 800 | 1,850 |\n| Haryana | 1,100 | 1,000 | 2,100 |\n\nThis matrix is withdrawn for the 2026-27 session and must not be quoted for current admissions."
+  },
+  {
+   "doc_id": "DOC-MCC-RULES-2627",
+   "title": "MCC all-India counselling rules 2026-27",
+   "session": "2026-27",
+   "status": "active",
+   "doc_type": "counselling_rules",
+   "text": "Medical Counselling Committee rules for all-India quota counselling, session 2026-27.\n\n| Rule | Detail |\n| Number of rounds | Four rounds, followed by a stray vacancy round |\n| Last date to report to the allotted college | 20 September 2026 for the final round |\n| Forfeiture if a candidate resigns a seat in round 2 | The tuition fee for the first year is forfeited, and the candidate is barred from the stray vacancy round |\n| Forfeiture if a candidate does not join after round 1 | Only the caution deposit is forfeited |\n| Seat upgrade | A candidate who accepts an upgraded seat in round 3 loses the earlier seat immediately |\n\nA candidate who resigns after the final reporting date forfeits the full first-year fee. The rule above is applied uniformly to government and private colleges."
+  },
+  {
+   "doc_id": "DOC-BIHAR-COUNS-2627",
+   "title": "Bihar state quota counselling guidelines 2026-27",
+   "session": "2026-27",
+   "status": "active",
+   "doc_type": "counselling_rules",
+   "text": "Bihar Combined Entrance Competitive Examination Board guidelines for state quota counselling 2026-27.\n\n| Item | Detail |\n| Eligibility | Domicile certificate of Bihar, or a Bihar school record for the qualifying examination |\n| Seat reservation | 10 percent for economically weaker sections, as notified |\n| Document verification | Original documents must be produced at the nodal centre in Patna |\n| Fee payment | Tuition is paid to the college directly after seat allotment |\n\nState quota seats in Bihar private medical colleges are allotted only through this board. No agent or broker can secure a seat."
+  },
+  {
+   "doc_id": "DOC-SMC-PAT-PG-2627",
+   "title": "Shanti Medical College MD fee notice 2026-27",
+   "session": "2026-27",
+   "status": "active",
+   "doc_type": "fee_notice_pg",
+   "text": "Official postgraduate fee notice for Shanti Medical College, Patna.\nSession 2026-27. This notice covers MD and MS programmes only and does not change the MBBS fee.\n\n| Head | Amount per year |\n| Annual tuition fee for MD and MS | INR 18,50,000 |\n| Hostel and mess charges | INR 1,45,000 |\n| One-time caution deposit | INR 3,00,000 |\n\nPostgraduate seats are filled only through NEET-PG counselling."
+  },
+  {
+   "doc_id": "DOC-NMC-FACULTY-NORMS",
+   "title": "NMC minimum faculty norms for medical colleges",
+   "session": "2026-27",
+   "status": "active",
+   "doc_type": "regulation",
+   "text": "NMC minimum faculty norms for undergraduate medical colleges. Issued by the National Medical Commission (NMC).\n\n| Post | Minimum qualification | Minimum teaching experience |\n| Professor | MD or MS or DNB in the subject | 8 years, of which 4 years as Associate Professor |\n| Associate Professor | MD or MS or DNB in the subject | 5 years, of which 2 years as Assistant Professor |\n| Assistant Professor | MD or MS or DNB in the subject | 3 years of teaching experience |\n| Senior Resident | MD or MS or DNB in the subject, or MBBS for a non-teaching post | 1 year |\n| Tutor | MBBS | None |\n\nExperience is counted from the date of registration with the state medical council. Experience in a non-teaching post is counted at half weight."
+  },
+  {
+   "doc_id": "DOC-WB-FEE-ORDER-2627",
+   "title": "West Bengal fee regulatory order for private medical colleges",
+   "session": "2026-27",
+   "status": "active",
+   "doc_type": "fee_order",
+   "text": "West Bengal Fee Regulatory Committee order on tuition for private medical colleges, session 2026-27.\n\n| Item | Detail |\n| Tuition ceiling for MBBS | INR 8,00,000 per year for private medical colleges in West Bengal |\n| Annual increase allowed | Not more than 8 percent over the previous session |\n| Colleges above the ceiling | Must refund the excess within 30 days of this order |\n| Hostel charges | Regulated separately and cannot be bundled with tuition |\n\nNo private medical college in West Bengal may charge tuition above the ceiling in this order."
+  },
+  {
+   "doc_id": "DOC-NOISE-NURSING-2627",
+   "title": "Rajarhat Medical College BSc Nursing fee notice 2026-27",
+   "session": "2026-27",
+   "status": "active",
+   "doc_type": "fee_notice_nursing",
+   "text": "Official fee notice for the BSc Nursing programme at Rajarhat Medical College & Hospital, Kolkata.\nSession 2026-27. This notice covers BSc Nursing only and does not apply to MBBS.\n\n| Head | Amount per year |\n| Annual tuition fee for BSc Nursing | INR 1,45,000 |\n| Hostel and mess charges | INR 78,000 |\n| One-time admission deposit | INR 40,000 |\n\nNursing seats are filled through the state nursing entrance examination."
+  },
+  {
+   "doc_id": "DOC-NOISE-TRANSPORT-2627",
+   "title": "Saraswati Medical College transport and bus fee circular",
+   "session": "2026-27",
+   "status": "active",
+   "doc_type": "circular",
+   "text": "Transport circular for Saraswati Medical College, Rohtak, session 2026-27.\n\n| Route | Annual bus fee |\n| Rohtak city to college | INR 28,000 |\n| Jhajjar to college | INR 34,000 |\n| Sonipat to college | INR 41,000 |\n\nThe bus fee is optional and is not part of the tuition fee. Students who use their own transport do not pay the bus fee."
+  },
+  {
+   "doc_id": "DOC-NOISE-SCHOLARSHIP-2627",
+   "title": "Post-matric scholarship circular for medical students",
+   "session": "2026-27",
+   "status": "active",
+   "doc_type": "circular",
+   "text": "Post-matric scholarship circular for students in recognised medical colleges, session 2026-27.\n\n| Item | Detail |\n| Family income ceiling | INR 2,50,000 per year |\n| Scholarship amount | INR 60,000 per year towards tuition |\n| Application window | 1 July 2026 to 31 October 2026 |\n| Mode of payment | Direct benefit transfer to the student account |\n\nThe scholarship is credited to the student and does not reduce the fee printed on the college notice."
+  },
+  {
+   "doc_id": "DOC-NOISE-RESEARCH",
+   "title": "CGPRR research brief on health financing",
+   "session": "2026-27",
+   "status": "active",
+   "doc_type": "research",
+   "text": "CGPRR research brief: state health financing and medical education capacity.\n\n| Indicator | Value |\n| Public health spend as share of state budget | 4.1 percent |\n| Medical colleges added in five years | 92 |\n| Districts without a district hospital | 61 |\n\nThe brief argues that seat expansion without faculty supply raises the cost of teaching posts. It contains no fee or bond figures for any individual college."
+  },
+  {
+   "doc_id": "DOC-NOISE-TENDER",
+   "title": "Wehold Projects hospital construction tender",
+   "session": "2026-27",
+   "status": "active",
+   "doc_type": "tender",
+   "text": "Wehold Projects invitation to tender for a 300-bed hospital in New Town, Kolkata.\n\n| Item | Detail |\n| Estimate | INR 41,00,00,000 |\n| Site | Plot 14, New Town, Kolkata |\n| Last date for bids | 30 October 2026 |\n| Earnest money | INR 41,00,000 |\n\nBidders must show three completed hospital projects of at least 200 beds."
+  }
+ ]
+}

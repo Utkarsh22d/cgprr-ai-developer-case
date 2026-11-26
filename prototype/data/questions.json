@@ -1,0 +1,386 @@
+[
+ {
+  "qid": "Q01",
+  "question": "What is the annual MBBS tuition fee at Shanti Medical College, Patna for 2026-27?",
+  "lang": "en",
+  "answerable": true,
+  "gold_docs": [
+   "DOC-SMC-PAT-FEE-2627"
+  ],
+  "session": "2026-27"
+ },
+ {
+  "qid": "Q02",
+  "question": "What was the annual MBBS tuition fee at Shanti Medical College, Patna in 2025-26?",
+  "lang": "en",
+  "answerable": true,
+  "gold_docs": [
+   "DOC-SMC-PAT-FEE-2526"
+  ],
+  "session": "2025-26"
+ },
+ {
+  "qid": "Q03",
+  "question": "What is the MBBS bond amount in Haryana for 2026-27?",
+  "lang": "en",
+  "answerable": true,
+  "gold_docs": [
+   "DOC-BOND-HR-2627"
+  ],
+  "session": null
+ },
+ {
+  "qid": "Q04",
+  "question": "What is the MBBS bond amount in Uttar Pradesh?",
+  "lang": "en",
+  "answerable": true,
+  "gold_docs": [
+   "DOC-BOND-UP-2627"
+  ],
+  "session": null
+ },
+ {
+  "qid": "Q05",
+  "question": "How many years of service does the Bihar MBBS bond require?",
+  "lang": "en",
+  "answerable": true,
+  "gold_docs": [
+   "DOC-BOND-BR-2627"
+  ],
+  "session": null
+ },
+ {
+  "qid": "Q06",
+  "question": "What is the hostel and mess fee at Rajarhat Medical College, Kolkata for 2026-27?",
+  "lang": "en",
+  "answerable": true,
+  "gold_docs": [
+   "DOC-RMCH-KOL-FEE-2627"
+  ],
+  "session": "2026-27"
+ },
+ {
+  "qid": "Q07",
+  "question": "How many MBBS seats are approved at Kalinga Institute of Medical Sciences for 2026-27?",
+  "lang": "en",
+  "answerable": true,
+  "gold_docs": [
+   "DOC-KIMS-BBS-FEE-2627"
+  ],
+  "session": "2026-27"
+ },
+ {
+  "qid": "Q08",
+  "question": "What is the total payable in the first year at Deccan Medical College, Hyderabad for 2026-27?",
+  "lang": "en",
+  "answerable": true,
+  "gold_docs": [
+   "DOC-DMC-HYD-FEE-2627"
+  ],
+  "session": "2026-27"
+ },
+ {
+  "qid": "Q09",
+  "question": "What is the annual tuition fee for MD at Shanti Medical College, Patna?",
+  "lang": "en",
+  "answerable": true,
+  "gold_docs": [
+   "DOC-SMC-PAT-PG-2627"
+  ],
+  "session": "2026-27"
+ },
+ {
+  "qid": "Q10",
+  "question": "Which document gives the state-wise MBBS seat matrix for 2026-27?",
+  "lang": "en",
+  "answerable": true,
+  "gold_docs": [
+   "DOC-NMC-SEAT-2627"
+  ],
+  "session": "2026-27"
+ },
+ {
+  "qid": "Q11",
+  "question": "What is the forfeiture rule if a candidate resigns a seat in round 2?",
+  "lang": "en",
+  "answerable": true,
+  "gold_docs": [
+   "DOC-MCC-RULES-2627"
+  ],
+  "session": null
+ },
+ {
+  "qid": "Q12",
+  "question": "Does the Haryana bond apply to all-India quota seats?",
+  "lang": "en",
+  "answerable": true,
+  "gold_docs": [
+   "DOC-BOND-HR-2627"
+  ],
+  "session": null
+ },
+ {
+  "qid": "Q13",
+  "question": "What is the caution deposit at Ganges Institute of Medical Sciences, Varanasi for 2026-27?",
+  "lang": "en",
+  "answerable": true,
+  "gold_docs": [
+   "DOC-GIMS-VNS-FEE-2627"
+  ],
+  "session": "2026-27"
+ },
+ {
+  "qid": "Q14",
+  "question": "What is the tuition fee at Saraswati Medical College, Rohtak in 2025-26?",
+  "lang": "en",
+  "answerable": true,
+  "gold_docs": [
+   "DOC-SMC-ROH-FEE-2526"
+  ],
+  "session": "2025-26"
+ },
+ {
+  "qid": "Q15",
+  "question": "How much is the West Bengal MBBS bond?",
+  "lang": "en",
+  "answerable": true,
+  "gold_docs": [
+   "DOC-BOND-WB-2627"
+  ],
+  "session": null
+ },
+ {
+  "qid": "Q16",
+  "question": "What is the BSc Nursing fee at Rajarhat Medical College?",
+  "lang": "en",
+  "answerable": true,
+  "gold_docs": [
+   "DOC-NOISE-NURSING-2627"
+  ],
+  "session": "2026-27"
+ },
+ {
+  "qid": "Q17",
+  "question": "What is the annual bus fee at Saraswati Medical College, Rohtak?",
+  "lang": "en",
+  "answerable": true,
+  "gold_docs": [
+   "DOC-NOISE-TRANSPORT-2627"
+  ],
+  "session": "2026-27"
+ },
+ {
+  "qid": "Q18",
+  "question": "What is the minimum teaching experience for an Assistant Professor under NMC norms?",
+  "lang": "en",
+  "answerable": true,
+  "gold_docs": [
+   "DOC-NMC-FACULTY-NORMS"
+  ],
+  "session": null
+ },
+ {
+  "qid": "Q19",
+  "question": "What tuition ceiling does the West Bengal fee order set for private medical colleges?",
+  "lang": "en",
+  "answerable": true,
+  "gold_docs": [
+   "DOC-WB-FEE-ORDER-2627"
+  ],
+  "session": "2026-27"
+ },
+ {
+  "qid": "Q20",
+  "question": "What is the last date to report to the allotted college in the final round?",
+  "lang": "en",
+  "answerable": true,
+  "gold_docs": [
+   "DOC-MCC-RULES-2627"
+  ],
+  "session": null
+ },
+ {
+  "qid": "Q21",
+  "question": "patna me mbbs ki fees kitni hai 2026-27 me",
+  "lang": "hi-rom",
+  "answerable": true,
+  "gold_docs": [
+   "DOC-SMC-PAT-FEE-2627"
+  ],
+  "session": "2026-27"
+ },
+ {
+  "qid": "Q22",
+  "question": "haryana me bond kitna hai",
+  "lang": "hi-rom",
+  "answerable": true,
+  "gold_docs": [
+   "DOC-BOND-HR-2627"
+  ],
+  "session": null
+ },
+ {
+  "qid": "Q23",
+  "question": "kolkata medical college me hostel fees kitni hai",
+  "lang": "hi-rom",
+  "answerable": true,
+  "gold_docs": [
+   "DOC-RMCH-KOL-FEE-2627"
+  ],
+  "session": "2026-27"
+ },
+ {
+  "qid": "Q24",
+  "question": "bihar bond me kitne saal service karni hai",
+  "lang": "hi-rom",
+  "answerable": true,
+  "gold_docs": [
+   "DOC-BOND-BR-2627"
+  ],
+  "session": null
+ },
+ {
+  "qid": "Q25",
+  "question": "up me mbbs ke liye kitna bond bharna padta hai",
+  "lang": "hi-rom",
+  "answerable": true,
+  "gold_docs": [
+   "DOC-BOND-UP-2627"
+  ],
+  "session": null
+ },
+ {
+  "qid": "Q26",
+  "question": "varanasi medical college me admission deposit kitna hai",
+  "lang": "hi-rom",
+  "answerable": true,
+  "gold_docs": [
+   "DOC-GIMS-VNS-FEE-2627"
+  ],
+  "session": "2026-27"
+ },
+ {
+  "qid": "Q27",
+  "question": "kolkata medical college er mbbs fees koto 2026-27",
+  "lang": "bn-rom",
+  "answerable": true,
+  "gold_docs": [
+   "DOC-RMCH-KOL-FEE-2627"
+  ],
+  "session": "2026-27"
+ },
+ {
+  "qid": "Q28",
+  "question": "haryana bond er taka koto",
+  "lang": "bn-rom",
+  "answerable": true,
+  "gold_docs": [
+   "DOC-BOND-HR-2627"
+  ],
+  "session": null
+ },
+ {
+  "qid": "Q29",
+  "question": "kalinga medical college bhubaneswar re seat koto",
+  "lang": "bn-rom",
+  "answerable": true,
+  "gold_docs": [
+   "DOC-KIMS-BBS-FEE-2627"
+  ],
+  "session": "2026-27"
+ },
+ {
+  "qid": "Q30",
+  "question": "west bengal bond kemon ache",
+  "lang": "bn-rom",
+  "answerable": true,
+  "gold_docs": [
+   "DOC-BOND-WB-2627"
+  ],
+  "session": null
+ },
+ {
+  "qid": "Q31",
+  "question": "What is the MBBS tuition fee at a medical college in Assam?",
+  "lang": "en",
+  "answerable": false,
+  "gold_docs": [],
+  "session": null
+ },
+ {
+  "qid": "Q32",
+  "question": "Who is the current director of AIIMS New Delhi?",
+  "lang": "en",
+  "answerable": false,
+  "gold_docs": [],
+  "session": null
+ },
+ {
+  "qid": "Q33",
+  "question": "What is the NEET-UG 2027 cut-off for Shanti Medical College, Patna?",
+  "lang": "en",
+  "answerable": false,
+  "gold_docs": [],
+  "session": null
+ },
+ {
+  "qid": "Q34",
+  "question": "What is the annual salary of a junior resident at Kalinga Institute of Medical Sciences?",
+  "lang": "en",
+  "answerable": false,
+  "gold_docs": [],
+  "session": null
+ },
+ {
+  "qid": "Q35",
+  "question": "What is the BDS bond amount in Haryana?",
+  "lang": "en",
+  "answerable": false,
+  "gold_docs": [],
+  "session": null
+ },
+ {
+  "qid": "Q36",
+  "question": "What is the tuition fee for session 2029-30 at Shanti Medical College, Patna?",
+  "lang": "en",
+  "answerable": false,
+  "gold_docs": [],
+  "session": "2029-30"
+ },
+ {
+  "qid": "Q37",
+  "question": "How many MBBS seats does a medical college in Rajasthan have?",
+  "lang": "en",
+  "answerable": false,
+  "gold_docs": [],
+  "session": null
+ },
+ {
+  "qid": "Q38",
+  "question": "What is the placement package for nursing graduates at Rajarhat Medical College?",
+  "lang": "en",
+  "answerable": false,
+  "gold_docs": [],
+  "session": null
+ },
+ {
+  "qid": "Q39",
+  "question": "What is the hostel fee at Saraswati Medical College, Rohtak for 2026-27?",
+  "lang": "en",
+  "answerable": true,
+  "gold_docs": [
+   "DOC-SMC-ROH-FEE-2627"
+  ],
+  "session": "2026-27"
+ },
+ {
+  "qid": "Q40",
+  "question": "What is the one-time admission deposit at Deccan Medical College?",
+  "lang": "en",
+  "answerable": true,
+  "gold_docs": [
+   "DOC-DMC-HYD-FEE-2627"
+  ],
+  "session": "2026-27"
+ }
+]
