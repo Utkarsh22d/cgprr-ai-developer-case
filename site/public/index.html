@@ -3,153 +3,207 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>NEET.info Counsellor Assist — grounded demo</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231f3864'/%3E%3Cpath d='M9 21V11h2.6l5.2 6.6V11H19v10h-2.6l-5.2-6.6V21H9z' fill='%237ee2b8'/%3E%3C/svg%3E" />
-<meta name="description" content="A live demo of the grounded Q&amp;A and resume matcher built for the CGPRR case: citations, a numeric guard, and the capacity arithmetic." />
+<title>NEET.info Counsellor Assist — grounded answers, cited</title>
+<meta name="description" content="A working demo of a private counselling assistant: 28 synthetic notices, hybrid retrieval, session-year filters, and a numeric guard that blocks any fee or bond figure not present in the cited document." />
+<meta name="theme-color" content="#0f172a" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Counsellor Assist — every number traced to a notice" />
+<meta property="og:description" content="Grounded Q&A with citations, a live numeric guard, the GPU capacity arithmetic, and a resume matcher whose score is blind to employment gaps." />
+<meta property="og:url" content="https://cgprr-ai-developer-case.vercel.app/" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="canonical" href="https://cgprr-ai-developer-case.vercel.app/" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f172a'/%3E%3Cpath d='M9 22V10h2.8l5.6 7.2V10H20v12h-2.8l-5.6-7.2V22H9z' fill='%236ee7b7'/%3E%3C/svg%3E" />
+<link rel="preload" href="data/demo.json" as="fetch" crossorigin />
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header class="top">
-  <div class="wrap">
-    <div class="brand">
-      <span class="dot"></span>
-      <span>NEET.info <strong>Counsellor Assist</strong></span>
-    </div>
-    <nav id="tabs">
-      <button data-tab="ask" class="on">Ask</button>
-      <button data-tab="guard">Numeric guard</button>
-      <button data-tab="capacity">Capacity</button>
-      <button data-tab="rank">Hirrx Match</button>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="appbar">
+  <div class="shell appbar-inner">
+    <a class="brand" href="#ask" aria-label="Counsellor Assist, home">
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5l8 5 8-5v14"/></svg>
+      </span>
+      <span class="brand-text"><strong>NEET.info</strong> Counsellor Assist</span>
+    </a>
+    <nav class="tabs" role="tablist" aria-label="Sections">
+      <button role="tab" id="tab-ask" aria-controls="panel-ask" data-tab="ask" class="on">Ask</button>
+      <button role="tab" id="tab-guard" aria-controls="panel-guard" data-tab="guard">Guard</button>
+      <button role="tab" id="tab-capacity" aria-controls="panel-capacity" data-tab="capacity">Capacity</button>
+      <button role="tab" id="tab-rank" aria-controls="panel-rank" data-tab="rank">Match</button>
     </nav>
+    <div class="appbar-meta">
+      <span class="status" title="Documents indexed, superseded notices excluded by default">
+        <span class="pulse" aria-hidden="true"></span><span id="statusText">loading</span>
+      </span>
+    </div>
   </div>
 </header>
 
-<main class="wrap">
-
+<main id="main">
   <section class="hero">
-    <h1>Every number, traced to a notice.</h1>
-    <p class="lede">
-      A working extract of the CGPRR case: 28 synthetic documents across two counselling
-      sessions, hybrid retrieval, a numeric guard that blocks any figure not present in the
-      cited chunk, and a resume matcher whose score is provably blind to employment gaps.
-    </p>
-    <div class="stats" id="stats"></div>
-  </section>
-
-  <!-- ASK ------------------------------------------------------------- -->
-  <section id="panel-ask" class="panel on">
-    <div class="two">
-      <div class="col">
-        <div class="card">
-          <label class="field">
-            <span>Search the question set</span>
-            <input id="qsearch" type="search" placeholder="fee, bond, kolkata, bond koto…" autocomplete="off" />
-          </label>
-          <div class="filters" id="qfilters">
-            <button class="chip on" data-set="all">All</button>
-            <button class="chip" data-set="dev">Dev set</button>
-            <button class="chip" data-set="stress">Stress set</button>
-            <button class="chip" data-lang="hi-rom">Roman Hindi</button>
-            <button class="chip" data-lang="bn-rom">Roman Bengali</button>
-          </div>
-          <ul id="qlist" class="qlist"></ul>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card answer" id="answerCard">
-          <p class="muted">Pick a question on the left. Answers below are generated by the prototype on load — nothing here is written by hand.</p>
-        </div>
-      </div>
+    <div class="shell">
+      <p class="eyebrow">CGPRR case · private AI on one GPU</p>
+      <h1>Every number,<br class="brk" /> traced to a notice.</h1>
+      <p class="lede">
+        A family asks what the bond is. This assistant answers from one official notice, cites it,
+        and refuses when the figure is not there. Below is the working extract — retrieval, the
+        numeric guard, the GPU arithmetic and the resume matcher — all running on the same code
+        that produced the design note.
+      </p>
+      <div class="findings" id="findings"></div>
     </div>
   </section>
 
-  <!-- GUARD ------------------------------------------------------------ -->
-  <section id="panel-guard" class="panel">
-    <div class="card">
-      <h2>The numeric guard</h2>
-      <p class="muted">
-        Type an answer and pick the notice it cites. Any figure that does not appear in that
-        source is flagged. This is the same rule the Python prototype enforces — ported to the
-        browser so you can break it yourself.
-      </p>
-      <div class="two">
+  <!-- ASK -->
+  <section class="panel on" id="panel-ask" role="tabpanel" aria-labelledby="tab-ask" tabindex="0">
+    <div class="shell grid-ask">
+      <div class="card list-card">
+        <div class="card-head">
+          <h2 id="qcount">Questions</h2>
+          <span class="hint"><kbd>/</kbd> to search</span>
+        </div>
+        <div class="controls">
+          <div class="search">
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg>
+            <input id="qsearch" type="search" placeholder="fee, bond, kolkata, bond koto…" autocomplete="off" aria-label="Search questions" />
+          </div>
+          <div class="chips" id="qfilters" role="group" aria-label="Filter questions">
+            <button class="chip on" data-set="all">All</button>
+            <button class="chip" data-set="dev">Dev</button>
+            <button class="chip" data-set="stress">Stress</button>
+            <button class="chip" data-lang="hi-rom">Roman Hindi</button>
+            <button class="chip" data-lang="bn-rom">Roman Bengali</button>
+          </div>
+        </div>
+        <ul class="qlist" id="qlist" aria-label="Question set"></ul>
+      </div>
+
+      <div class="card answer-card" id="answerCard" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- GUARD -->
+  <section class="panel" id="panel-guard" role="tabpanel" aria-labelledby="tab-guard" tabindex="0">
+    <div class="shell grid-guard">
+      <div class="card">
+        <div class="card-head"><h2>The numeric guard</h2><span class="hint">runs in your browser</span></div>
+        <p class="muted">
+          Type an answer and choose the notice it cites. Any figure that does not appear in that
+          source is flagged — the same rule the Python prototype enforces, ported to the client so
+          you can try to break it.
+        </p>
         <label class="field">
           <span>Cited source</span>
           <select id="gsource"></select>
         </label>
+        <div class="field">
+          <span>Presets</span>
+          <div class="chips" id="gpresets">
+            <button class="chip" data-preset="incident1">Incident 1 · wrong state's figure</button>
+            <button class="chip" data-preset="ok">Correct answer</button>
+            <button class="chip" data-preset="lakh">"10 lakh" vs "10,00,000"</button>
+          </div>
+        </div>
         <label class="field">
-          <span>Preset</span>
-          <select id="gpreset">
-            <option value="">— choose —</option>
-            <option value="incident1">Incident 1: Haryana bond, UP's 5 lakh figure</option>
-            <option value="ok">Correct answer, 10 lakh</option>
-            <option value="lakh">"INR 10 lakh" vs "INR 10,00,000"</option>
-          </select>
+          <span>Answer text</span>
+          <textarea id="gannswer" rows="3" spellcheck="false" aria-label="Answer text to check"></textarea>
         </label>
+        <div class="verdict" id="gresult"></div>
+        <div class="numbers" id="gnumbers"></div>
       </div>
-      <label class="field">
-        <span>Answer text</span>
-        <textarea id="gannswer" rows="3" spellcheck="false"></textarea>
-      </label>
-      <div id="gresult" class="verdict"></div>
-      <pre id="gsourceText" class="source"></pre>
+      <div class="card">
+        <div class="card-head"><h2>Cited source</h2><span class="tag" id="gsourceId"></span></div>
+        <p class="muted small">The document the answer must draw from. Every figure in the answer is checked against this text and nothing else.</p>
+        <pre class="source" id="gsourceText"></pre>
+      </div>
     </div>
   </section>
 
-  <!-- CAPACITY --------------------------------------------------------- -->
-  <section id="panel-capacity" class="panel">
-    <div class="card">
-      <h2>Will one RTX 6000 do it?</h2>
-      <p class="muted">
-        Recomputed from the case exhibits. KV cache per token = 2 × layers × KV heads × head dim × bytes,
-        against 43.2 GB usable after a 10% runtime reserve.
-      </p>
-      <div id="kvtable"></div>
-      <h3>Roofline</h3>
-      <p class="muted">Single-stream decode is a batch-of-one number; capacity is bounded by bytes moved per step at batch N.</p>
-      <div id="thrtable"></div>
-      <h3>Worst hour</h3>
-      <p class="muted">70% of a day's traffic in four hours, six turns per chat. "Design" assumes a 2,200-token context cap with a 60% prefix-cache hit.</p>
-      <div id="traftable"></div>
-    </div>
-    <div class="card">
-      <h2>Three-year cost</h2>
-      <div id="tco" class="kv"></div>
-      <p class="muted small">
-        The finding that matters: 75% of the cost is two people. The GPU is not the expensive part
-        of this plan, and cloud is not cheaper — it is break-even at 2.91 million chats a year.
-      </p>
-    </div>
-  </section>
-
-  <!-- RANK ------------------------------------------------------------- -->
-  <section id="panel-rank" class="panel">
-    <div class="card">
-      <h2>Hirrx Match</h2>
-      <p class="muted">Rules gate eligibility (NMC faculty norms); the model only orders the eligible pool. Position is never derived from an employment gap.</p>
-      <label class="field">
-        <span>Post</span>
-        <select id="jselect"></select>
-      </label>
-      <div id="ranktable"></div>
-    </div>
-    <div class="card">
-      <h2>Fairness report</h2>
-      <p class="muted">Selection rate at top-10 by gender, against the applicant pool and against the eligible pool. Threshold: four-fifths (0.80).</p>
-      <div id="fairness"></div>
+  <!-- CAPACITY -->
+  <section class="panel" id="panel-capacity" role="tabpanel" aria-labelledby="tab-capacity" tabindex="0">
+    <div class="shell">
+      <div class="callout" id="capCallout"></div>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-head"><h2>KV cache and concurrency</h2></div>
+          <p class="muted small">Per token: 2 × layers × KV heads × head dim × bytes. 43.2 GB usable after a 10% runtime reserve.</p>
+          <div class="tw" id="kvtable"></div>
+        </div>
+        <div class="card">
+          <div class="card-head"><h2>Roofline</h2></div>
+          <p class="muted small">Batch-of-one decode is not capacity: at batch N the limit is bytes moved per step.</p>
+          <div class="tw" id="thrtable"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-head"><h2>Worst hour</h2></div>
+        <p class="muted small">70% of a day's traffic in four hours, six turns per chat. "Design" assumes a 2,200-token context cap with a 60% prefix-cache hit.</p>
+        <div class="tw" id="traftable"></div>
+      </div>
+      <div class="card">
+        <div class="card-head"><h2>Three-year cost</h2><span class="hint">Dec 2026 – Nov 2029</span></div>
+        <div class="kvlist" id="tco"></div>
+      </div>
     </div>
   </section>
 
+  <!-- RANK -->
+  <section class="panel" id="panel-rank" role="tabpanel" aria-labelledby="tab-rank" tabindex="0">
+    <div class="shell">
+      <div class="card">
+        <div class="card-head"><h2>Hirrx Match</h2><span class="hint">rules gate, model orders</span></div>
+        <p class="muted">
+          NMC-style norms and minimum experience are hard gates. Inside the eligible pool the score
+          is learned — and an employment gap is never a feature, so a maternity leave label cannot
+          move a candidate.
+        </p>
+        <label class="field">
+          <span>Post</span>
+          <select id="jselect"></select>
+        </label>
+        <div class="tw" id="ranktable"></div>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-head"><h2>Applicant pool</h2></div>
+          <p class="muted small">What a regulator sees: top-10 share against everyone who applied. Threshold — four-fifths, 0.80.</p>
+          <div id="fairApplicant"></div>
+        </div>
+        <div class="card">
+          <div class="card-head"><h2>Eligible pool</h2></div>
+          <p class="muted small">Who was actually in the race after the rule gates. A different question, and both must be reported.</p>
+          <div id="fairEligible"></div>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer class="foot">
-  <div class="wrap">
-    <p><strong>What is real:</strong> retrieval, session/programme filters, table-aware chunking, the numeric guard, the resume rule gates and the fairness report.</p>
-    <p><strong>What is stubbed:</strong> the generator is extractive (it copies a cited row rather than calling an LLM), the dense encoder is an offline LSA stand-in, and no GPU was available, so capacity figures are roofline estimates.</p>
-    <p class="muted small">Synthetic data for the CGPRR case assignment. No real fee, college or person is represented.</p>
+  <div class="shell foot-grid">
+    <div>
+      <h3>What is real</h3>
+      <p>Hybrid retrieval, session and programme filters, table-aware chunking, the numeric guard, the resume rule gates and the fairness report — all from the runnable prototype.</p>
+    </div>
+    <div>
+      <h3>What is stubbed</h3>
+      <p>The generator is extractive by design, the encoder is an offline stand-in, and no GPU was available — capacity figures are roofline estimates.</p>
+    </div>
+    <div>
+      <h3>Links</h3>
+      <p>
+        <a href="https://github.com/Utkarsh22d/cgprr-ai-developer-case" rel="noopener">Source on GitHub</a><br />
+        <a href="https://neet-info-counsellor-assist-demo-9fhmxj-preview.freebuff.site" rel="noopener">Mirror deployment</a>
+      </p>
+    </div>
+  </div>
+  <div class="shell">
+    <p class="fineprint">Synthetic data for the CGPRR case assignment. No real college, fee notice, counselling rule or person is represented.</p>
   </div>
 </footer>
 
-<script src="app.js"></script>
+<script src="app.js" defer></script>
 </body>
 </html>

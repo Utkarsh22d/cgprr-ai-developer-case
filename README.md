@@ -4,6 +4,9 @@ Response to the CGPRR group / WeAI Labs screening case: plan and prototype a pri
 AI platform for **NEET.info Counsellor Assist** and **Hirrx Match** on a single
 48 GB RTX 6000, with no student or doctor data leaving the building.
 
+**Live demo:** https://cgprr-ai-developer-case.vercel.app  
+**Mirror:** https://neet-info-counsellor-assist-demo-9fhmxj-preview.freebuff.site
+
 Everything in this repository is synthetic. No real college, fee notice, person,
 counselling rule or medical college is represented.
 
@@ -81,5 +84,19 @@ estimates calibrated against the measured decode speeds in the case exhibits.
 
 ## Demo
 
-A static build of the prototype's real outputs lives in [`site/`](site/). No build step:
-serve `site/public/` with any static host.
+A static build of the prototype's real outputs lives in [`site/`](site/), deployed at
+**https://cgprr-ai-developer-case.vercel.app**.
+
+It has four sections: **Ask** (52 questions, each with its answer, citation and guard verdict),
+**Guard** (the numeric guard ported to the browser, so you can try to sneak a wrong figure past
+it), **Capacity** (KV cache, roofline, worst hour and the three-year cost) and **Match**
+(ranked candidates with explanations and the fairness report).
+
+No build step. To run it locally, serve the folder:
+
+```bash
+cd site/public && python -m http.server 8000
+```
+
+On Vercel the project root is `site`, output directory `public`, framework Other — set in
+[`site/vercel.json`](site/vercel.json). The mirror is hosted the same way.
